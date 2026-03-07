@@ -10,6 +10,8 @@ OUTPUT_DIR = PROJECT_ROOT / "outputs"
 AUDIO_OUTPUT_DIR = OUTPUT_DIR / "audio"
 DEFAULT_CHECKPOINT_DIR = PROJECT_ROOT / "checkpoints"
 DEFAULT_TOY_DATASET_PATH = PROJECT_ROOT / "data" / "examples" / "toy_asl_pairs.json"
+DEFAULT_ASLG_DATASET_NAME = "achrafothman/aslg_pc12"
+DEFAULT_ASLG_OUTPUT_DIR = PROJECT_ROOT / "data" / "asl_translation"
 
 # Audio defaults
 DEFAULT_SAMPLE_RATE = 16_000

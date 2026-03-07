@@ -1,6 +1,6 @@
-"""Simple Transformer seq2seq model for English->ASL gloss prediction.
+"""Transformer seq2seq model for English->ASL gloss prediction.
 
-This is intentionally educational and lightweight for a student project baseline.
+This keeps a student-friendly implementation while supporting larger datasets.
 """
 
 from __future__ import annotations
@@ -40,11 +40,11 @@ class EnglishToASLTransformer(nn.Module):
         tgt_vocab_size: int,
         src_pad_idx: int,
         tgt_pad_idx: int,
-        d_model: int = 64,
-        nhead: int = 2,
-        num_encoder_layers: int = 1,
-        num_decoder_layers: int = 1,
-        dim_feedforward: int = 128,
+        d_model: int = 256,
+        nhead: int = 4,
+        num_encoder_layers: int = 3,
+        num_decoder_layers: int = 3,
+        dim_feedforward: int = 512,
         dropout: float = 0.1,
     ):
         super().__init__()
@@ -56,7 +56,6 @@ class EnglishToASLTransformer(nn.Module):
         self.tgt_embedding = nn.Embedding(tgt_vocab_size, d_model, padding_idx=tgt_pad_idx)
         self.positional_encoding = PositionalEncoding(d_model, dropout=dropout)
 
-        # batch_first=True avoids shape warnings and keeps tensors [batch, seq, hidden].
         self.transformer = nn.Transformer(
             d_model=d_model,
             nhead=nhead,
@@ -69,7 +68,7 @@ class EnglishToASLTransformer(nn.Module):
         self.output_projection = nn.Linear(d_model, tgt_vocab_size)
 
     def _make_tgt_mask(self, tgt_len: int, device: torch.device) -> torch.Tensor:
-        # Bool mask expected by nn.Transformer: True entries are masked.
+        # Bool mask: True entries are masked.
         return torch.triu(torch.ones(tgt_len, tgt_len, device=device, dtype=torch.bool), diagonal=1)
 
     def forward(self, src_ids: torch.Tensor, tgt_input_ids: torch.Tensor) -> torch.Tensor:

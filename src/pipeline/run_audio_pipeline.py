@@ -69,7 +69,7 @@ def run_pipeline(args: argparse.Namespace) -> dict:
 
     if args.mic:
         from src.audio.record_audio import record_from_microphone
-        audio_path = record_from_microphone()
+        audio_path = record_from_microphone(duration=args.duration)
     else:
         audio_path = args.audio_file
 

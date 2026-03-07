@@ -5,14 +5,23 @@ from __future__ import annotations
 import csv
 import json
 from pathlib import Path
+from typing import Any
 
-import torch
-from torch.utils.data import Dataset
+try:
+    import torch
+    from torch.utils.data import Dataset
+except ModuleNotFoundError:  # Allows non-training scripts to run without torch import.
+    torch = None
+
+    class Dataset:  # type: ignore[override]
+        """Fallback base when torch is unavailable."""
+
+        pass
 
 from src.models.tokenizer_utils import SimpleWhitespaceTokenizer, Vocab
 
 
-def load_paired_records(path: str) -> list[dict[str, str]]:
+def load_paired_records(path: str | Path) -> list[dict[str, str]]:
     """Load paired `english`/`gloss` records from JSON, JSONL, or CSV."""
     file_path = Path(path)
     if not file_path.exists():
@@ -59,6 +68,30 @@ def load_paired_records(path: str) -> list[dict[str, str]]:
     return records
 
 
+def load_dataset_splits(path: str | Path) -> tuple[list[dict[str, str]], list[dict[str, str]] | None]:
+    """Load dataset from either:
+    - single file (returns train records, val=None), or
+    - directory containing train.json and optional val.json
+    """
+    dataset_path = Path(path)
+
+    if dataset_path.is_dir():
+        train_path = dataset_path / "train.json"
+        val_path = dataset_path / "val.json"
+
+        if not train_path.exists():
+            raise FileNotFoundError(f"Expected train split at: {train_path}")
+
+        train_records = load_paired_records(train_path)
+        val_records = load_paired_records(val_path) if val_path.exists() else None
+        return train_records, val_records
+
+    if dataset_path.is_file():
+        return load_paired_records(dataset_path), None
+
+    raise FileNotFoundError(f"Dataset path not found: {path}")
+
+
 class EnglishASLDataset(Dataset):
     """PyTorch dataset for seq2seq training with teacher forcing targets."""
 
@@ -83,7 +116,9 @@ class EnglishASLDataset(Dataset):
     def __len__(self) -> int:
         return len(self.records)
 
-    def __getitem__(self, index: int) -> dict[str, torch.Tensor | str]:
+    def __getitem__(self, index: int) -> dict[str, Any]:
+        if torch is None:
+            raise RuntimeError("torch is required to use EnglishASLDataset.")
         record = self.records[index]
         english = record["english"]
         gloss = record["gloss"]

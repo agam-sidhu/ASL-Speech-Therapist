@@ -3,3 +3,4 @@ numpy==1.26.4
 scipy==1.13.1
 sounddevice==0.5.2
 torch==2.2.2
+datasets==4.6.1

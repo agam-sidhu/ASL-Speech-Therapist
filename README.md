@@ -1,18 +1,10 @@
 # ASL Speech Therapist
 
-## Project Shift: Baseline -> ML Translation Scaffold
+This repo supports an end-to-end backend pipeline:
 
-The original baseline focused on:
+`audio -> ASR -> text normalization -> learned English->ASL gloss model -> structured gloss output`
 
-`audio -> ASR -> normalization -> mostly rule-based gloss`
-
-This refactor changes the core design to match the real research/engineering goal:
-
-`audio -> ASR -> normalized English text -> learned English-to-ASL model -> structured ASL output`
-
-The key architectural decision is that **English-to-ASL is now modeled as a learned sequence prediction task**, not a dictionary/rule system.
-
-## New Architecture
+## Architecture (Current)
 
 ```text
 src/
@@ -23,12 +15,12 @@ src/
 
   nlp/
     normalize_text.py
-    text_to_gloss.py            # deprecated compatibility wrapper
+    text_to_gloss.py
 
   asl/
     schema.py
     postprocess_gloss.py
-    fallback_rules.py           # debug/baseline only
+    fallback_rules.py
 
   models/
     english_to_asl_model.py
@@ -39,6 +31,7 @@ src/
     dataset.py
     preprocess_dataset.py
     collate.py
+    prepare_hf_dataset.py
 
   training/
     train.py
@@ -57,37 +50,10 @@ src/
 data/
   examples/
     toy_asl_pairs.json
-
-requirements.txt
-README.md
+  asl_translation/
+    train.json
+    val.json
 ```
-
-## Why This Design Changed
-
-Rule-based gloss conversion is useful as a quick baseline, but it does not scale to real translation quality or richer ASL representations.
-
-This refactor introduces:
-
-- trainable seq2seq model scaffolding
-- paired dataset loading pipeline
-- training and validation loops with checkpoints
-- model-based text and audio inference
-- structured output schema for downstream modules
-
-## Current Model Baseline
-
-The default model is a **small Transformer encoder-decoder** (`EnglishToASLTransformer`) implemented with PyTorch.
-
-Default toy-data hyperparameters are intentionally small:
-
-- `d_model=64`
-- `nhead=2`
-- `num_encoder_layers=1`
-- `num_decoder_layers=1`
-- `dim_feedforward=128`
-
-Input: normalized English token ids  
-Output: ASL gloss token sequence
 
 ## Installation
 
@@ -99,9 +65,16 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Dataset Format
+`requirements.txt` now includes:
 
-Paired records are expected in JSON/JSONL/CSV with fields:
+- `torch`
+- `faster-whisper`
+- `datasets`
+- core numeric/audio deps
+
+## Dataset Support
+
+The training format remains:
 
 ```json
 {
@@ -110,161 +83,124 @@ Paired records are expected in JSON/JSONL/CSV with fields:
 }
 ```
 
-A toy dataset is included at:
+### Prepare ASLG-PC12 from Hugging Face
 
-`data/examples/toy_asl_pairs.json`
+Dataset: `achrafothman/aslg_pc12`
 
-## How To Train (Toy Dataset)
+`src/data/prepare_hf_dataset.py`:
+
+- loads dataset via `datasets.load_dataset`
+- maps fields `text -> english`, `gloss -> gloss`
+- applies normalization/cleanup
+- creates reproducible train/val split
+- saves JSON files by default
+
+Command:
+
+```bash
+python src/data/prepare_hf_dataset.py \
+  --dataset_name achrafothman/aslg_pc12 \
+  --output_dir data/asl_translation \
+  --val_split 0.1 \
+  --seed 42
+```
+
+Output files:
+
+- `data/asl_translation/train.json`
+- `data/asl_translation/val.json`
+
+## Model (Stronger Default Transformer)
+
+`src/models/english_to_asl_model.py` defaults:
+
+- `d_model=256`
+- `nhead=4`
+- `num_encoder_layers=3`
+- `num_decoder_layers=3`
+- `dim_feedforward=512`
+- `dropout=0.1`
+- `batch_first=True`
+- separate `src_pad_idx` and `tgt_pad_idx`
+
+Generation uses greedy decoding for now.
+
+## Training
+
+`src/training/train.py` supports:
+
+- dataset file (`.json/.jsonl/.csv`) or dataset directory (`train.json` + optional `val.json`)
+- stronger architecture defaults
+- CPU training
+- early stopping by validation loss (`--patience`)
+- configurable DataLoader workers (`--num_workers`)
+- checkpoint save directory (`--save_dir`)
+
+### Train on ASLG-PC12 prepared split
+
+```bash
+python src/training/train.py \
+  --dataset data/asl_translation \
+  --save_dir checkpoints/aslg_pc12_transformer \
+  --epochs 30 \
+  --batch_size 16 \
+  --lr 1e-3 \
+  --patience 5 \
+  --device cpu \
+  --num_workers 0
+```
+
+### Train on toy dataset (quick smoke test)
 
 ```bash
 python src/training/train.py \
   --dataset data/examples/toy_asl_pairs.json \
   --epochs 25 \
-  --batch_size 4 \
+  --batch_size 16 \
   --device cpu
 ```
 
-This will:
-
-- preprocess paired records
-- split train/validation
-- build source/target vocabularies
-- train with teacher forcing
-- evaluate each epoch
-- save best checkpoint to `checkpoints/best_model.pt`
-
-## Overfit Sanity-Check Mode
-
-Use this to verify the model can memorize tiny data:
-
-```bash
-python src/training/train.py \
-  --dataset data/examples/toy_asl_pairs.json \
-  --epochs 200 \
-  --batch_size 2 \
-  --device cpu \
-  --max_train_samples 2 \
-  --no_val
-```
-
-Options:
-
-- `--max_train_samples N`: truncate training split to first N examples.
-- `--no_val`: skip validation completely and checkpoint by train loss.
-
-## How To Run Text Inference
-
-Single input:
+## Text Inference
 
 ```bash
 python src/pipeline/run_text_inference.py \
   --text "can you help me today" \
-  --checkpoint checkpoints/best_model.pt \
+  --checkpoint checkpoints/aslg_pc12_transformer/best_model.pt \
   --device cpu
 ```
 
-Batch input from file (one phrase per line):
-
-```bash
-python src/pipeline/run_text_inference.py \
-  --text_file data/examples/inference_inputs.txt \
-  --checkpoint checkpoints/best_model.pt \
-  --device cpu
-```
-
-Debug mode (inspect raw generation internals):
+Debug mode:
 
 ```bash
 python src/pipeline/run_text_inference.py \
   --text "can you help me today" \
-  --checkpoint checkpoints/best_model.pt \
+  --checkpoint checkpoints/aslg_pc12_transformer/best_model.pt \
   --device cpu \
   --debug
 ```
 
-Debug JSON fields include:
+## Audio Inference
 
-- `normalized_input_text`
-- `source_tokens`
-- `source_ids`
-- `raw_generated_ids`
-- `raw_decoded_tokens`
-- `cleaned_gloss_tokens`
-- `empty_after_postprocess`
-
-Compare learned model output vs fallback in one run:
+Microphone:
 
 ```bash
-python src/pipeline/run_text_inference.py \
-  --text "can you help me today" \
-  --checkpoint checkpoints/best_model.pt \
-  --include_fallback_compare
+python src/pipeline/run_audio_pipeline.py \
+  --mic \
+  --checkpoint checkpoints/aslg_pc12_transformer/best_model.pt \
+  --device cpu
 ```
 
-## How To Run Audio Inference
-
-Microphone mode:
-
-```bash
-python src/pipeline/run_audio_pipeline.py --mic --checkpoint checkpoints/best_model.pt
-```
-
-Audio file mode:
-
-```bash
-python src/pipeline/run_audio_pipeline.py --audio_file example.wav --checkpoint checkpoints/best_model.pt
-```
-
-Audio debug mode:
+Audio file:
 
 ```bash
 python src/pipeline/run_audio_pipeline.py \
   --audio_file example.wav \
-  --checkpoint checkpoints/best_model.pt \
-  --debug
+  --checkpoint checkpoints/aslg_pc12_transformer/best_model.pt \
+  --device cpu
 ```
-
-Pipeline:
-
-`mic/audio -> preprocess (mono 16kHz) -> Whisper ASR -> normalize -> learned model inference`
-
-## Fallback Rules (Debug Only)
-
-A fallback module exists in `src/asl/fallback_rules.py` for debugging and comparison.
-
-It is **not** the main translation path. Use explicitly:
-
-```bash
-python src/pipeline/run_text_inference.py --text "hello" --use_fallback
-```
-
-## Debugging Workflow (Recommended)
-
-1. Train on toy dataset and confirm checkpoint is produced.
-2. Run inference on exact training phrases.
-3. Use `--debug` and check whether model emits `<eos>` immediately.
-4. If needed, run overfit mode with `--max_train_samples 2 --no_val`.
-5. Compare learned output and fallback output using `--include_fallback_compare`.
-
-## Current Limitations
-
-- Toy dataset is tiny and only for sanity checks.
-- Model quality is limited until trained on real paired English-ASL resources.
-- Output target is gloss text, not sign video/animation.
-- No phoneme-level pronunciation scoring yet.
-- No computer-vision sign feedback yet.
-
-## Future Extensions
-
-1. Real dataset integration (WLASL/How2Sign-aligned gloss resources, cleaned parallel pairs)
-2. Better translation modeling (larger transformer, pretrained encoders, beam search)
-3. Sign retrieval / animation backend integration
-4. Visual signing feedback via computer vision modules
-5. Pronunciation and phoneme analysis modules connected to ASR front-end
-6. Richer ASL representations beyond gloss (non-manual markers, timing, sign IDs)
 
 ## Notes
 
-- Microphone permission prompts are handled by OS/browser/device settings through `sounddevice`.
-- For notebook/Colab workflows, audio file mode is usually more reliable than direct mic capture.
-- All pipeline scripts return JSON-serializable outputs for easier integration with future components.
+- This keeps the existing audio->ASR->model inference flow.
+- Fallback rules are still available for comparison/debugging, but learned translation is the primary path.
+- This repo does not yet include sign animation or CV sign-feedback modules.

@@ -17,27 +17,23 @@ from src.utils.config import DEFAULT_CHECKPOINT_DIR, DEFAULT_TOY_DATASET_PATH
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train English->ASL gloss transformer.")
-    parser.add_argument("--dataset", default=DEFAULT_TOY_DATASET_PATH, help="Path to paired dataset file")
+    parser.add_argument("--dataset", default=str(DEFAULT_TOY_DATASET_PATH), help="Dataset file or directory")
     parser.add_argument("--epochs", type=int, default=25)
-    parser.add_argument("--batch_size", type=int, default=4)
+    parser.add_argument("--batch_size", type=int, default=16)
     parser.add_argument("--lr", type=float, default=1e-3)
-    parser.add_argument("--val_split", type=float, default=0.2)
+    parser.add_argument("--val_split", type=float, default=0.1)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--device", default="cpu")
-    parser.add_argument("--save_dir", default=DEFAULT_CHECKPOINT_DIR)
+    parser.add_argument("--save_dir", default=str(DEFAULT_CHECKPOINT_DIR))
+    parser.add_argument("--patience", type=int, default=5, help="Early stopping patience on val loss")
+    parser.add_argument("--num_workers", type=int, default=0)
 
-    # Tiny-model defaults are better for toy-data debugging.
-    parser.add_argument("--d_model", type=int, default=64)
-    parser.add_argument("--nhead", type=int, default=2)
-    parser.add_argument("--num_encoder_layers", type=int, default=1)
-    parser.add_argument("--num_decoder_layers", type=int, default=1)
-    parser.add_argument("--dim_feedforward", type=int, default=128)
+    parser.add_argument("--d_model", type=int, default=256)
+    parser.add_argument("--nhead", type=int, default=4)
+    parser.add_argument("--num_encoder_layers", type=int, default=3)
+    parser.add_argument("--num_decoder_layers", type=int, default=3)
+    parser.add_argument("--dim_feedforward", type=int, default=512)
     parser.add_argument("--dropout", type=float, default=0.1)
-    parser.add_argument(
-        "--tiny_model",
-        action="store_true",
-        help="Force tiny toy-data-friendly architecture defaults.",
-    )
 
     parser.add_argument("--max_src_len", type=int, default=64)
     parser.add_argument("--max_tgt_len", type=int, default=64)
@@ -65,32 +61,22 @@ def split_records(records: list[dict[str, str]], val_split: float, seed: int) ->
     rng = random.Random(seed)
     rng.shuffle(shuffled)
 
-    split_idx = max(1, int(len(shuffled) * (1 - val_split)))
+    split_idx = int(len(shuffled) * (1 - val_split))
+    split_idx = max(1, min(split_idx, len(shuffled) - 1))
+
     train_records = shuffled[:split_idx]
-    val_records = shuffled[split_idx:] or shuffled[:1]
+    val_records = shuffled[split_idx:]
     return train_records, val_records
-
-
-def maybe_apply_tiny_model(args: argparse.Namespace) -> None:
-    """Apply tiny model config if explicitly requested."""
-    if not args.tiny_model:
-        return
-    args.d_model = 64
-    args.nhead = 2
-    args.num_encoder_layers = 1
-    args.num_decoder_layers = 1
-    args.dim_feedforward = 128
 
 
 def main() -> None:
     args = parse_args()
-    maybe_apply_tiny_model(args)
 
     import torch
     from torch.utils.data import DataLoader
 
     from src.data.collate import TranslationCollator
-    from src.data.dataset import EnglishASLDataset, load_paired_records
+    from src.data.dataset import EnglishASLDataset, load_dataset_splits
     from src.data.preprocess_dataset import preprocess_records
     from src.models.english_to_asl_model import EnglishToASLTransformer
     from src.models.tokenizer_utils import SimpleWhitespaceTokenizer, build_vocabs
@@ -100,14 +86,16 @@ def main() -> None:
 
     set_seed(args.seed)
 
-    records = load_paired_records(args.dataset)
-    records = preprocess_records(records)
+    dataset_path = Path(args.dataset)
+    loaded_train, loaded_val = load_dataset_splits(dataset_path)
+
+    train_records = preprocess_records(loaded_train)
+    val_records = preprocess_records(loaded_val) if loaded_val else None
 
     if args.no_val:
-        train_records = records
-        val_records: list[dict[str, str]] = []
-    else:
-        train_records, val_records = split_records(records, val_split=args.val_split, seed=args.seed)
+        val_records = []
+    elif val_records is None:
+        train_records, val_records = split_records(train_records, val_split=args.val_split, seed=args.seed)
 
     if args.max_train_samples is not None:
         if args.max_train_samples <= 0:
@@ -120,7 +108,6 @@ def main() -> None:
     src_tokenizer = SimpleWhitespaceTokenizer(lowercase=True)
     tgt_tokenizer = SimpleWhitespaceTokenizer(lowercase=False)
 
-    # Build vocabs using training split only.
     src_vocab, tgt_vocab = build_vocabs(train_records, src_tokenizer, tgt_tokenizer)
 
     train_dataset = EnglishASLDataset(
@@ -134,9 +121,15 @@ def main() -> None:
     )
 
     collator = TranslationCollator(pad_idx=tgt_vocab.pad_idx)
-    train_loader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True, collate_fn=collator)
+    train_loader = DataLoader(
+        train_dataset,
+        batch_size=args.batch_size,
+        shuffle=True,
+        collate_fn=collator,
+        num_workers=args.num_workers,
+    )
 
-    if args.no_val:
+    if args.no_val or not val_records:
         val_loader = None
     else:
         val_dataset = EnglishASLDataset(
@@ -148,7 +141,13 @@ def main() -> None:
             max_src_len=args.max_src_len,
             max_tgt_len=args.max_tgt_len,
         )
-        val_loader = DataLoader(val_dataset, batch_size=args.batch_size, shuffle=False, collate_fn=collator)
+        val_loader = DataLoader(
+            val_dataset,
+            batch_size=args.batch_size,
+            shuffle=False,
+            collate_fn=collator,
+            num_workers=args.num_workers,
+        )
 
     model = EnglishToASLTransformer(
         src_vocab_size=len(src_vocab),
@@ -170,6 +169,7 @@ def main() -> None:
     checkpoint_path = save_dir / "best_model.pt"
 
     best_metric = float("inf")
+    epochs_without_improvement = 0
 
     for epoch in range(1, args.epochs + 1):
         model.train()
@@ -193,26 +193,29 @@ def main() -> None:
         metrics: dict[str, float | int | str | bool | None] = {
             "epoch": epoch,
             "train_loss": train_loss,
-            "no_val": args.no_val,
             "train_size": len(train_records),
+            "val_size": len(val_records or []),
+            "no_val": args.no_val,
         }
 
-        if args.no_val:
+        if val_loader is None:
             monitor_value = train_loss
-            metrics["monitor_metric"] = "train_loss"
-            metrics["monitor_value"] = monitor_value
+            monitor_name = "train_loss"
         else:
-            assert val_loader is not None
             val_metrics = evaluate_model(model, val_loader, device=args.device, pad_idx=tgt_vocab.pad_idx)
             metrics.update(val_metrics)
-            monitor_value = val_metrics["val_loss"]
-            metrics["monitor_metric"] = "val_loss"
-            metrics["monitor_value"] = monitor_value
+            monitor_value = float(val_metrics["val_loss"])
+            monitor_name = "val_loss"
+
+        metrics["monitor_metric"] = monitor_name
+        metrics["monitor_value"] = monitor_value
 
         print(json.dumps(metrics))
 
-        if monitor_value < best_metric:
+        improved = monitor_value < best_metric
+        if improved:
             best_metric = monitor_value
+            epochs_without_improvement = 0
             torch.save(
                 {
                     "model_name": "english_to_asl_transformer",
@@ -232,13 +235,22 @@ def main() -> None:
                     "tgt_tokenizer": {"lowercase": tgt_tokenizer.lowercase},
                     "model_state_dict": model.state_dict(),
                     "best_metric": best_metric,
-                    "best_metric_name": "train_loss" if args.no_val else "val_loss",
+                    "best_metric_name": monitor_name,
                     "train_size": len(train_records),
-                    "val_size": len(val_records),
+                    "val_size": len(val_records or []),
                     "no_val": args.no_val,
                 },
                 checkpoint_path,
             )
+        else:
+            epochs_without_improvement += 1
+
+        if (not args.no_val) and args.patience > 0 and epochs_without_improvement >= args.patience:
+            print(
+                f"Early stopping: no {monitor_name} improvement for {epochs_without_improvement} epochs "
+                f"(patience={args.patience})."
+            )
+            break
 
     print(f"Training complete. Best checkpoint: {checkpoint_path}")
 
