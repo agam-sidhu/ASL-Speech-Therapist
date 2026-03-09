@@ -74,8 +74,18 @@ def predict_gloss(
     device: str = "cpu",
     max_len: int = 32,
     debug: bool = False,
+    beam_width: int = 1,
 ) -> ASLPrediction:
-    """Run end-to-end text inference using the learned translation model."""
+    """Run end-to-end text inference using the learned translation model.
+
+    Args:
+        text: Input English text.
+        bundle: Loaded model artifacts.
+        device: Device to run inference on.
+        max_len: Maximum output sequence length.
+        debug: If True, include detailed debug info in output.
+        beam_width: Beam search width. 1 = greedy, >1 = beam search.
+    """
     normalized = normalize_text(text)
     clean_text = normalized["clean_text"]
 
@@ -90,6 +100,7 @@ def predict_gloss(
         bos_idx=bundle.tgt_vocab.bos_idx,
         eos_idx=bundle.tgt_vocab.eos_idx,
         max_len=max_len,
+        beam_width=beam_width,
     )
 
     generated_ids = generated.squeeze(0).tolist()
