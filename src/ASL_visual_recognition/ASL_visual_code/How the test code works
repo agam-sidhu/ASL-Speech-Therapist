@@ -1,0 +1,54 @@
+1. The Extraction Phase (MediaPipe)
+When a video is loaded, OpenCV reads it frame-by-frame. It hands each frame to MediaPipe, which maps out the human body in 3D space. 
+It specifically tracks 75 points: 33 on the body/pose, 21 on the left hand, and 21 on the right hand.
+
+Result: A raw 3D skeleton matrix saved as an .npy file.
+
+2. The Kinematic Preprocessing Phase
+Raw coordinates aren't enough for the ASL—motion, so our process_seq() function centers the skeleton (so it doesn't matter where the user stands in the frame), 
+scales it (so it doesn't matter how tall they are), and calculates the Velocity and Acceleration of every joint. It then standardizes the clip to exactly 100 frames.
+Result: A normalized, dynamic motion map.
+
+3. The Fingerprinting Phase (Graph Encoder)
+This is where the Keras 3 model comes in (which was pain in the ass to get working properly, prob was why it wasn't working for you earlier). The script loads only the Graph_Encoder, ie the isolated brain of our AI.
+
+It feeds the motion map into the custom Spacial Graph Convolutions, Mamba blocks, and Transformers (which was actually really cool, I've never thought of stacking the neural network blocks like that, they feed into each other to better understand the data). The model digests all that complex motion and spits out a single, dense 1D array (an embedding). Which is how we find the unique id for the signs.
+
+4. The Siamese Comparison Phase
+Instead of using a heavy AI layer to compare the video, you use pure mathematics.
+
+The script loads our reference_library.json, which contains the pre-computed fingerprints for all 2000 signs. It calculates the absolute distance between the user's fingerprint and every reference fingerprint, converts that distance into a confidence percentage (similarity score), 
+and sorts them to find the perfect match.
+
+I ran this in the VS code terminal:
+".\.venv\Scripts\python.exe" model_test.py
+
+With this you can copy and change the test model however you want/need for the project, plz reach out and ask questions if needed or if something doesn't make sense. 
+
+------------------
+
+Next step thoughts for the website:
+Right now, the script is static: it expects a file named 00414.mp4 in the same folder. 
+To connect this to a website where users record themselves on a webcam, we need to turn this script into a Backend API Listener.
+
+Thoughts on what to do next - 
+
+1. Turn the Script into a Function
+Right now, our code runs top-to-bottom automatically (if __name__ == "__main__":). 
+
+Need to change it into a callable function like def predict_sign(dynamic_video_path): so it only runs when a website asks it to, and returns the best_match_id as a variable instead of just printing it to the terminal.
+
+2. Build an API Server
+Use a framework like FastAPI or Flask (which I think you've already done). This will act as the bridge between our website and our AI.
+
+3. Handle Temporary Web Files
+When a user records a video on the website, the browser usually saves it as a webm or .mp4 blob. 
+
+The API will receive this blob, save it to a temp folder (e.g., temp_user_video.mp4), run our AI function on it, send the result back to the user's screen, and then immediately delete the video to save hard drive space (VERY IMPORTANT PLZ).
+
+4. The Website Frontend
+Literally whatever you want it to look like
+
+However, I am still a subscriber of the idea of giving the user 1 vid at a time and progressing to the next sign of whatever sentance they made so the model can actually handle it. Show them first vid, scroll down, record/upload vid, get results above 85% (or whatever sounds good), and then move on to next video. 
+
+Can end and mix that however you feel's best, I believe in you!! The last website you made as an example looked great.

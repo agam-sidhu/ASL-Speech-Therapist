@@ -1,0 +1,6 @@
+﻿!pip install 
+tensorflow (and keras)
+mediapipe
+opencv-python (cv2)
+numpy
+protobuf==3.20.3
