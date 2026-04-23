@@ -34,7 +34,7 @@ To connect this to a website where users record themselves on a webcam, we need 
 Thoughts on what to do next - 
 
 1. Turn the Script into a Function
-Right now, our code runs top-to-bottom automatically (if __name__ == "__main__":). 
+Right now, our code runs top-to-bottom automatically (if __name__ == "__main__":)
 
 Need to change it into a callable function like def predict_sign(dynamic_video_path): so it only runs when a website asks it to, and returns the best_match_id as a variable instead of just printing it to the terminal.
 
@@ -43,6 +43,13 @@ Use a framework like FastAPI or Flask (which I think you've already done). This 
 
 3. Handle Temporary Web Files
 When a user records a video on the website, the browser usually saves it as a webm or .mp4 blob. 
+
+What really matters in this tbh is the video path 
+- 
+ VIDEO_PATH = os.path.join(SCRIPT_DIR, "00414.mp4")
+-
+
+Need to update that so that it uses the users video
 
 The API will receive this blob, save it to a temp folder (e.g., temp_user_video.mp4), run our AI function on it, send the result back to the user's screen, and then immediately delete the video to save hard drive space (VERY IMPORTANT PLZ).
 
