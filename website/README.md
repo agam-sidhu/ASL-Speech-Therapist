@@ -6,7 +6,7 @@
 ### 🔤 Text → ASL
 
 * Converts English sentences into ASL gloss
-* Uses transformer-based model (Kevin’s model)
+* Uses transformer-based model
 * Includes fallback rules for robustness
 
 ---
@@ -48,7 +48,7 @@
 * Siamese similarity learning
 * Trained on **WLASL dataset**
 
-### 🤖 Kevin’s Model (NLP)
+### 🤖 Kevin and Agam’s Model (NLP)
 
 * English → ASL gloss transformer
 * Uses paired text-gloss data
