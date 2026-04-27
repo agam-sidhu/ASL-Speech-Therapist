@@ -70,8 +70,6 @@ Feedback Engine
 ```
 
 ---
-
-
 ## 📂 Models
 
 Due to size limits, models may not be included.
@@ -123,14 +121,6 @@ Feedback:
 * No runtime dataset scanning
 * Lazy model loading
 * Efficient cosine similarity matching
-
----
-
-## 👨‍💻 Authors
-
-* Joel – ASL Vision Model (GNN + Siamese)
-* Kevin and Agam – NLP Transformer Model
-* Priyanshu – Full-stack integration, optimization, UI
 
 ---
 
