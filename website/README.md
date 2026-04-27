@@ -71,48 +71,6 @@ Feedback Engine
 
 ---
 
-## ⚙️ Installation
-
-### 1. Clone Repo
-
-```bash
-git clone https://github.com/yourusername/asl-ai-translator.git
-cd asl-ai-translator
-```
-
----
-
-### 2. Backend Setup
-
-```bash
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
-
-Backend runs on:
-
-```
-http://127.0.0.1:8000
-```
-
----
-
-### 3. Frontend Setup
-
-```bash
-cd frontend
-npm install
-npm start
-```
-
-Frontend runs on:
-
-```
-http://localhost:3000
-```
-
----
 
 ## 📂 Models
 
