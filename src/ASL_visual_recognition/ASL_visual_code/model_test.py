@@ -16,6 +16,7 @@ VIDEO_PATH = os.path.join(SCRIPT_DIR, "00414.mp4")           # Input MP4
 OUTPUT_PATH = os.path.join(SCRIPT_DIR, "my_test_video.npy")  # Intermediate NPY
 LIBRARY_PATH = os.path.join(SCRIPT_DIR, "asl_reference_library.json")
 ENCODER_PATH = os.path.join(SCRIPT_DIR, "best_graph_simease2000.keras")
+TF_ENABLE_ONEDNN_OPTS=0
 
 MAX_FRAMES = 100
 
