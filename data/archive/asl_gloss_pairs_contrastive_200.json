@@ -1,0 +1,2602 @@
+[
+  {
+    "pair_id": "contrastive_0001",
+    "english": "my cousin is a doctor",
+    "gloss": "MY COUSIN DOCTOR",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_doctor_identity",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0002",
+    "english": "my father is a doctor",
+    "gloss": "MY FATHER DOCTOR",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_doctor_identity",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0003",
+    "english": "my brother is a doctor",
+    "gloss": "MY BROTHER DOCTOR",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_doctor_identity",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0004",
+    "english": "my sister is a doctor",
+    "gloss": "MY SISTER DOCTOR",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_doctor_identity",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0005",
+    "english": "my friend is a doctor",
+    "gloss": "MY FRIEND DOCTOR",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_doctor_identity",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0006",
+    "english": "my mother is a teacher",
+    "gloss": "MY MOTHER TEACHER",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_teacher_identity",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0007",
+    "english": "my cousin is a teacher",
+    "gloss": "MY COUSIN TEACHER",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_teacher_identity",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0008",
+    "english": "my brother is a teacher",
+    "gloss": "MY BROTHER TEACHER",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_teacher_identity",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0009",
+    "english": "my sister is a teacher",
+    "gloss": "MY SISTER TEACHER",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_teacher_identity",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0010",
+    "english": "my friend is a teacher",
+    "gloss": "MY FRIEND TEACHER",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_teacher_identity",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0011",
+    "english": "my mother is a nurse",
+    "gloss": "MY MOTHER NURSE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_nurse_identity",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0012",
+    "english": "my father is a nurse",
+    "gloss": "MY FATHER NURSE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_nurse_identity",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0013",
+    "english": "my cousin is a nurse",
+    "gloss": "MY COUSIN NURSE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_nurse_identity",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0014",
+    "english": "my sister is a nurse",
+    "gloss": "MY SISTER NURSE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_nurse_identity",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0015",
+    "english": "my friend is a nurse",
+    "gloss": "MY FRIEND NURSE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_nurse_identity",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0016",
+    "english": "my cousin works at the hospital",
+    "gloss": "MY COUSIN HOSPITAL WORK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_hospital_work",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0017",
+    "english": "my father works at the hospital",
+    "gloss": "MY FATHER HOSPITAL WORK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_hospital_work",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0018",
+    "english": "my brother works at the hospital",
+    "gloss": "MY BROTHER HOSPITAL WORK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_hospital_work",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0019",
+    "english": "my sister works at the hospital",
+    "gloss": "MY SISTER HOSPITAL WORK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_hospital_work",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0020",
+    "english": "my friend works at the hospital",
+    "gloss": "MY FRIEND HOSPITAL WORK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_hospital_work",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0021",
+    "english": "my mother works at the school",
+    "gloss": "MY MOTHER SCHOOL WORK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_school_work",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0022",
+    "english": "my father works at the school",
+    "gloss": "MY FATHER SCHOOL WORK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_school_work",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0023",
+    "english": "my brother works at the school",
+    "gloss": "MY BROTHER SCHOOL WORK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_school_work",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0024",
+    "english": "my sister works at the school",
+    "gloss": "MY SISTER SCHOOL WORK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_school_work",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0025",
+    "english": "my friend works at the school",
+    "gloss": "MY FRIEND SCHOOL WORK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_school_work",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0026",
+    "english": "my mother visits me tomorrow",
+    "gloss": "TOMORROW MY MOTHER VISIT ME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_visit_tomorrow",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0027",
+    "english": "my father visits me tomorrow",
+    "gloss": "TOMORROW MY FATHER VISIT ME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_visit_tomorrow",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0028",
+    "english": "my brother visits me tomorrow",
+    "gloss": "TOMORROW MY BROTHER VISIT ME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_visit_tomorrow",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0029",
+    "english": "my sister visits me tomorrow",
+    "gloss": "TOMORROW MY SISTER VISIT ME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_visit_tomorrow",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0030",
+    "english": "my friend visits me tomorrow",
+    "gloss": "TOMORROW MY FRIEND VISIT ME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_visit_tomorrow",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0031",
+    "english": "my mother calls me today",
+    "gloss": "TODAY MY MOTHER CALL ME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_call_today",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0032",
+    "english": "my father calls me today",
+    "gloss": "TODAY MY FATHER CALL ME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_call_today",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0033",
+    "english": "my brother calls me today",
+    "gloss": "TODAY MY BROTHER CALL ME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_call_today",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0034",
+    "english": "my sister calls me today",
+    "gloss": "TODAY MY SISTER CALL ME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_call_today",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0035",
+    "english": "my friend calls me today",
+    "gloss": "TODAY MY FRIEND CALL ME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_call_today",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0036",
+    "english": "my mother helps me today",
+    "gloss": "TODAY MY MOTHER HELP ME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_help_today",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0037",
+    "english": "my father helps me today",
+    "gloss": "TODAY MY FATHER HELP ME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_help_today",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0038",
+    "english": "my brother helps me today",
+    "gloss": "TODAY MY BROTHER HELP ME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_help_today",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0039",
+    "english": "my sister helps me today",
+    "gloss": "TODAY MY SISTER HELP ME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_help_today",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0040",
+    "english": "my friend helps me today",
+    "gloss": "TODAY MY FRIEND HELP ME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_help_today",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0041",
+    "english": "my mother studies english",
+    "gloss": "MY MOTHER STUDY ENGLISH",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_study_english",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0042",
+    "english": "my father studies english",
+    "gloss": "MY FATHER STUDY ENGLISH",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_study_english",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0043",
+    "english": "my brother studies english",
+    "gloss": "MY BROTHER STUDY ENGLISH",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_study_english",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0044",
+    "english": "my sister studies english",
+    "gloss": "MY SISTER STUDY ENGLISH",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_study_english",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0045",
+    "english": "my friend studies english",
+    "gloss": "MY FRIEND STUDY ENGLISH",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_study_english",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0046",
+    "english": "my mother teaches math",
+    "gloss": "MY MOTHER TEACH MATH",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_teach_math",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0047",
+    "english": "my cousin teaches math",
+    "gloss": "MY COUSIN TEACH MATH",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_teach_math",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0048",
+    "english": "my brother teaches math",
+    "gloss": "MY BROTHER TEACH MATH",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_teach_math",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0049",
+    "english": "my sister teaches math",
+    "gloss": "MY SISTER TEACH MATH",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_teach_math",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0050",
+    "english": "my friend teaches math",
+    "gloss": "MY FRIEND TEACH MATH",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "family_people_professions",
+    "contrast_group": "family_teach_math",
+    "contrast_axis": "family_member",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0051",
+    "english": "today i learn a new sign",
+    "gloss": "TODAY I LEARN NEW SIGN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "learn_new_sign_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0052",
+    "english": "yesterday i learn a new sign",
+    "gloss": "YESTERDAY I LEARN NEW SIGN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "learn_new_sign_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0053",
+    "english": "tomorrow i learn a new sign",
+    "gloss": "TOMORROW I LEARN NEW SIGN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "learn_new_sign_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0054",
+    "english": "this morning i learn a new sign",
+    "gloss": "THIS-MORNING I LEARN NEW SIGN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "learn_new_sign_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0055",
+    "english": "tonight i learn a new sign",
+    "gloss": "TONIGHT I LEARN NEW SIGN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "learn_new_sign_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0056",
+    "english": "today i practice asl",
+    "gloss": "TODAY I PRACTICE ASL",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "practice_asl_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0057",
+    "english": "yesterday i practice asl",
+    "gloss": "YESTERDAY I PRACTICE ASL",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "practice_asl_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0058",
+    "english": "tomorrow i practice asl",
+    "gloss": "TOMORROW I PRACTICE ASL",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "practice_asl_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0059",
+    "english": "this morning i practice asl",
+    "gloss": "THIS-MORNING I PRACTICE ASL",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "practice_asl_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0060",
+    "english": "tonight i practice asl",
+    "gloss": "TONIGHT I PRACTICE ASL",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "practice_asl_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0061",
+    "english": "today i finish homework",
+    "gloss": "TODAY I FINISH HOMEWORK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "finish_homework_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0062",
+    "english": "yesterday i finish homework",
+    "gloss": "YESTERDAY I FINISH HOMEWORK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "finish_homework_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0063",
+    "english": "tomorrow i finish homework",
+    "gloss": "TOMORROW I FINISH HOMEWORK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "finish_homework_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0064",
+    "english": "this afternoon i finish homework",
+    "gloss": "THIS-AFTERNOON I FINISH HOMEWORK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "finish_homework_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0065",
+    "english": "tonight i finish homework",
+    "gloss": "TONIGHT I FINISH HOMEWORK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "finish_homework_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0066",
+    "english": "today i go to class",
+    "gloss": "TODAY I GO CLASS",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "go_to_class_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0067",
+    "english": "yesterday i go to class",
+    "gloss": "YESTERDAY I GO CLASS",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "go_to_class_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0068",
+    "english": "tomorrow i go to class",
+    "gloss": "TOMORROW I GO CLASS",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "go_to_class_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0069",
+    "english": "this morning i go to class",
+    "gloss": "THIS-MORNING I GO CLASS",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "go_to_class_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0070",
+    "english": "every day i go to class",
+    "gloss": "EVERY-DAY I GO CLASS",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "go_to_class_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0071",
+    "english": "today i leave home early",
+    "gloss": "TODAY I LEAVE HOME EARLY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "leave_home_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0072",
+    "english": "yesterday i leave home early",
+    "gloss": "YESTERDAY I LEAVE HOME EARLY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "leave_home_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0073",
+    "english": "tomorrow i leave home early",
+    "gloss": "TOMORROW I LEAVE HOME EARLY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "leave_home_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0074",
+    "english": "this morning i leave home early",
+    "gloss": "THIS-MORNING I LEAVE HOME EARLY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "leave_home_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0075",
+    "english": "every day i leave home early",
+    "gloss": "EVERY-DAY I LEAVE HOME EARLY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "leave_home_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0076",
+    "english": "today i study at the library",
+    "gloss": "TODAY I STUDY LIBRARY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "study_library_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0077",
+    "english": "yesterday i study at the library",
+    "gloss": "YESTERDAY I STUDY LIBRARY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "study_library_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0078",
+    "english": "tomorrow i study at the library",
+    "gloss": "TOMORROW I STUDY LIBRARY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "study_library_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0079",
+    "english": "this afternoon i study at the library",
+    "gloss": "THIS-AFTERNOON I STUDY LIBRARY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "study_library_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0080",
+    "english": "every day i study at the library",
+    "gloss": "EVERY-DAY I STUDY LIBRARY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "study_library_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0081",
+    "english": "today i work downtown",
+    "gloss": "TODAY I WORK DOWNTOWN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "work_downtown_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0082",
+    "english": "yesterday i work downtown",
+    "gloss": "YESTERDAY I WORK DOWNTOWN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "work_downtown_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0083",
+    "english": "tomorrow i work downtown",
+    "gloss": "TOMORROW I WORK DOWNTOWN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "work_downtown_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0084",
+    "english": "this morning i work downtown",
+    "gloss": "THIS-MORNING I WORK DOWNTOWN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "work_downtown_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0085",
+    "english": "every day i work downtown",
+    "gloss": "EVERY-DAY I WORK DOWNTOWN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "work_downtown_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0086",
+    "english": "today i wake up early",
+    "gloss": "TODAY I WAKE-UP EARLY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "wake_up_early_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0087",
+    "english": "yesterday i wake up early",
+    "gloss": "YESTERDAY I WAKE-UP EARLY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "wake_up_early_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0088",
+    "english": "tomorrow i wake up early",
+    "gloss": "TOMORROW I WAKE-UP EARLY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "wake_up_early_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0089",
+    "english": "this morning i wake up early",
+    "gloss": "THIS-MORNING I WAKE-UP EARLY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "wake_up_early_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0090",
+    "english": "every day i wake up early",
+    "gloss": "EVERY-DAY I WAKE-UP EARLY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "time_daily_activity",
+    "contrast_group": "wake_up_early_by_time",
+    "contrast_axis": "time_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0091",
+    "english": "i cannot hear her",
+    "gloss": "I HEAR HER CAN NOT",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "cannot_verb_you",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0092",
+    "english": "i cannot see you",
+    "gloss": "I SEE YOU CAN NOT",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "cannot_verb_you",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0093",
+    "english": "i cannot understand you",
+    "gloss": "I UNDERSTAND YOU CAN NOT",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "cannot_verb_you",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0094",
+    "english": "i cannot help you",
+    "gloss": "I HELP YOU CAN NOT",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "cannot_verb_you",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0095",
+    "english": "i cannot call you",
+    "gloss": "I CALL YOU CAN NOT",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "cannot_verb_you",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0096",
+    "english": "can you explain that",
+    "gloss": "THAT EXPLAIN YOU CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "can_you_do_that",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0097",
+    "english": "can you repeat this",
+    "gloss": "THIS REPEAT YOU CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "can_you_do_that",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0098",
+    "english": "can you show that",
+    "gloss": "THAT SHOW YOU CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "can_you_do_that",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0099",
+    "english": "can you write that",
+    "gloss": "THAT WRITE YOU CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "can_you_do_that",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0100",
+    "english": "can you sign that",
+    "gloss": "THAT SIGN YOU CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "can_you_do_that",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0101",
+    "english": "do you know my name",
+    "gloss": "YOU KNOW MY NAME YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "do_you_know_information",
+    "contrast_axis": "object_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0102",
+    "english": "do you know her name",
+    "gloss": "YOU KNOW HER NAME YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "do_you_know_information",
+    "contrast_axis": "object_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0103",
+    "english": "do you know his number",
+    "gloss": "YOU KNOW HIS NUMBER YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "do_you_know_information",
+    "contrast_axis": "object_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0104",
+    "english": "do you know the address",
+    "gloss": "YOU KNOW ADDRESS YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "do_you_know_information",
+    "contrast_axis": "object_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0105",
+    "english": "do you know the answer",
+    "gloss": "YOU KNOW ANSWER YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "do_you_know_information",
+    "contrast_axis": "object_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0106",
+    "english": "i know your name",
+    "gloss": "I KNOW YOUR NAME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "i_verb_your_name",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0107",
+    "english": "i remember your name",
+    "gloss": "I REMEMBER YOUR NAME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "i_verb_your_name",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0108",
+    "english": "i forget your name",
+    "gloss": "I FORGET YOUR NAME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "i_verb_your_name",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0109",
+    "english": "i spell your name",
+    "gloss": "I SPELL YOUR NAME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "i_verb_your_name",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0110",
+    "english": "i write your name",
+    "gloss": "I WRITE YOUR NAME",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "i_verb_your_name",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0111",
+    "english": "did she call him",
+    "gloss": "SHE CALL HIM SHE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "did_she_verb_you",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0112",
+    "english": "did she help you",
+    "gloss": "SHE HELP YOU SHE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "did_she_verb_you",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0113",
+    "english": "did she ask you",
+    "gloss": "SHE ASK YOU SHE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "did_she_verb_you",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0114",
+    "english": "did she text you",
+    "gloss": "SHE TEXT YOU SHE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "did_she_verb_you",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0115",
+    "english": "did she meet you",
+    "gloss": "SHE MEET YOU SHE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "did_she_verb_you",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0116",
+    "english": "do you hear the teacher",
+    "gloss": "YOU HEAR TEACHER YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "do_you_verb_teacher",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0117",
+    "english": "do you see the teacher",
+    "gloss": "YOU SEE TEACHER YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "do_you_verb_teacher",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0118",
+    "english": "do you understand the teacher",
+    "gloss": "YOU UNDERSTAND TEACHER YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "do_you_verb_teacher",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0119",
+    "english": "do you know the teacher",
+    "gloss": "YOU KNOW TEACHER YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "do_you_verb_teacher",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0120",
+    "english": "do you remember the teacher",
+    "gloss": "YOU REMEMBER TEACHER YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "do_you_verb_teacher",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0121",
+    "english": "can you text me",
+    "gloss": "YOU TEXT ME CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "can_you_verb_me",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0122",
+    "english": "can you call me",
+    "gloss": "YOU CALL ME CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "can_you_verb_me",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0123",
+    "english": "can you teach me",
+    "gloss": "YOU TEACH ME CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "can_you_verb_me",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0124",
+    "english": "can you explain to me",
+    "gloss": "YOU EXPLAIN ME CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "can_you_verb_me",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0125",
+    "english": "can you ask me",
+    "gloss": "YOU ASK ME CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "sensory_understanding_communication",
+    "contrast_group": "can_you_verb_me",
+    "contrast_axis": "verb_choice",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0126",
+    "english": "the red book is under the table",
+    "gloss": "TABLE UNDER RED BOOK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "red_book_relation",
+    "contrast_axis": "relation",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0127",
+    "english": "the red book is near the table",
+    "gloss": "TABLE NEAR RED BOOK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "red_book_relation",
+    "contrast_axis": "relation",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0128",
+    "english": "the red book is behind the table",
+    "gloss": "TABLE BEHIND RED BOOK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "red_book_relation",
+    "contrast_axis": "relation",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0129",
+    "english": "the red book is here",
+    "gloss": "RED BOOK HERE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "red_book_relation",
+    "contrast_axis": "relation",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0130",
+    "english": "the red book is there",
+    "gloss": "RED BOOK THERE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "red_book_relation",
+    "contrast_axis": "relation",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0131",
+    "english": "my blue backpack is under the chair",
+    "gloss": "MY BLUE BACKPACK CHAIR UNDER",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "blue_backpack_relation",
+    "contrast_axis": "relation",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0132",
+    "english": "my blue backpack is near the chair",
+    "gloss": "MY BLUE BACKPACK CHAIR NEAR",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "blue_backpack_relation",
+    "contrast_axis": "relation",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0133",
+    "english": "my blue backpack is behind the chair",
+    "gloss": "MY BLUE BACKPACK CHAIR BEHIND",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "blue_backpack_relation",
+    "contrast_axis": "relation",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0134",
+    "english": "my blue backpack is here",
+    "gloss": "MY BLUE BACKPACK HERE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "blue_backpack_relation",
+    "contrast_axis": "relation",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0135",
+    "english": "my blue backpack is there",
+    "gloss": "MY BLUE BACKPACK THERE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "blue_backpack_relation",
+    "contrast_axis": "relation",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0136",
+    "english": "my keys are on the desk",
+    "gloss": "MY KEY DESK ON",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "keys_relation",
+    "contrast_axis": "location_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0137",
+    "english": "my keys are in the car",
+    "gloss": "MY KEY CAR IN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "keys_relation",
+    "contrast_axis": "location_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0138",
+    "english": "my keys are under the chair",
+    "gloss": "MY KEY CHAIR UNDER",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "keys_relation",
+    "contrast_axis": "location_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0139",
+    "english": "my keys are near the phone",
+    "gloss": "MY KEY PHONE NEAR",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "keys_relation",
+    "contrast_axis": "location_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0140",
+    "english": "my keys are here",
+    "gloss": "MY KEY HERE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "keys_relation",
+    "contrast_axis": "location_reference",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0141",
+    "english": "my computer is new",
+    "gloss": "MY COMPUTER NEW",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "computer_description",
+    "contrast_axis": "adjective",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0142",
+    "english": "my computer is old",
+    "gloss": "MY COMPUTER OLD",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "computer_description",
+    "contrast_axis": "adjective",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0143",
+    "english": "my laptop is broken",
+    "gloss": "MY LAPTOP BROKEN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "computer_description",
+    "contrast_axis": "adjective",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0144",
+    "english": "my computer is big",
+    "gloss": "MY COMPUTER BIG",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "computer_description",
+    "contrast_axis": "adjective",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0145",
+    "english": "my computer is small",
+    "gloss": "MY COMPUTER SMALL",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "computer_description",
+    "contrast_axis": "adjective",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0146",
+    "english": "your phone is new",
+    "gloss": "YOUR PHONE NEW",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "phone_description",
+    "contrast_axis": "adjective",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0147",
+    "english": "your phone is old",
+    "gloss": "YOUR PHONE OLD",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "phone_description",
+    "contrast_axis": "adjective",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0148",
+    "english": "your phone is broken",
+    "gloss": "YOUR PHONE BROKEN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "phone_description",
+    "contrast_axis": "adjective",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0149",
+    "english": "your phone is big",
+    "gloss": "YOUR PHONE BIG",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "phone_description",
+    "contrast_axis": "adjective",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0150",
+    "english": "your phone is small",
+    "gloss": "YOUR PHONE SMALL",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "phone_description",
+    "contrast_axis": "adjective",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0151",
+    "english": "the bathroom is near the office",
+    "gloss": "BATHROOM OFFICE NEAR",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "bathroom_near_place",
+    "contrast_axis": "reference_place",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0152",
+    "english": "the bathroom is near the library",
+    "gloss": "BATHROOM LIBRARY NEAR",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "bathroom_near_place",
+    "contrast_axis": "reference_place",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0153",
+    "english": "the bathroom is near the classroom",
+    "gloss": "BATHROOM CLASSROOM NEAR",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "bathroom_near_place",
+    "contrast_axis": "reference_place",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0154",
+    "english": "the bathroom is near the stairs",
+    "gloss": "BATHROOM STAIRS NEAR",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "bathroom_near_place",
+    "contrast_axis": "reference_place",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0155",
+    "english": "the bathroom is near the elevator",
+    "gloss": "BATHROOM ELEVATOR NEAR",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "bathroom_near_place",
+    "contrast_axis": "reference_place",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0156",
+    "english": "the folder is red",
+    "gloss": "FOLDER RED",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "folder_color",
+    "contrast_axis": "color",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0157",
+    "english": "the folder is blue",
+    "gloss": "FOLDER BLUE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "folder_color",
+    "contrast_axis": "color",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0158",
+    "english": "the folder is green",
+    "gloss": "FOLDER GREEN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "folder_color",
+    "contrast_axis": "color",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0159",
+    "english": "the folder is yellow",
+    "gloss": "FOLDER YELLOW",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "folder_color",
+    "contrast_axis": "color",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0160",
+    "english": "the folder is black",
+    "gloss": "FOLDER BLACK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "location_object_descriptive_relations",
+    "contrast_group": "folder_color",
+    "contrast_axis": "color",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0161",
+    "english": "are you ready",
+    "gloss": "YOU READY YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "ready_polarity",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0162",
+    "english": "are you not ready",
+    "gloss": "YOU READY NOT YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "ready_polarity",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0163",
+    "english": "you are ready",
+    "gloss": "YOU READY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "ready_polarity",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0164",
+    "english": "you are not ready",
+    "gloss": "YOU READY NOT",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "ready_polarity",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0165",
+    "english": "are they ready",
+    "gloss": "THEY READY THEY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "ready_polarity",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0166",
+    "english": "do you have time tonight",
+    "gloss": "YOU HAVE TIME TONIGHT YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "have_time_tonight",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0167",
+    "english": "do you not have time tonight",
+    "gloss": "YOU HAVE TIME TONIGHT NOT YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "have_time_tonight",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0168",
+    "english": "you have time tonight",
+    "gloss": "YOU HAVE TIME TONIGHT",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "have_time_tonight",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0169",
+    "english": "you do not have time tonight",
+    "gloss": "YOU HAVE TIME TONIGHT NOT",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "have_time_tonight",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0170",
+    "english": "do they have time tonight",
+    "gloss": "THEY HAVE TIME TONIGHT THEY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "have_time_tonight",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0171",
+    "english": "do you want to go tomorrow",
+    "gloss": "TOMORROW YOU WANT GO YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "want_go_tomorrow",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0172",
+    "english": "do you not want to go tomorrow",
+    "gloss": "TOMORROW YOU WANT GO NOT YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "want_go_tomorrow",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0173",
+    "english": "you want to go tomorrow",
+    "gloss": "TOMORROW YOU WANT GO",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "want_go_tomorrow",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0174",
+    "english": "you do not want to go tomorrow",
+    "gloss": "TOMORROW YOU WANT GO NOT",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "want_go_tomorrow",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0175",
+    "english": "does he want to go tomorrow",
+    "gloss": "TOMORROW HE WANT GO HE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "want_go_tomorrow",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0176",
+    "english": "can you stay after class",
+    "gloss": "AFTER CLASS YOU STAY CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "can_stay_after_class",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0177",
+    "english": "can you not stay after class",
+    "gloss": "AFTER CLASS YOU STAY NOT CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "can_stay_after_class",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0178",
+    "english": "you can stay after class",
+    "gloss": "AFTER CLASS YOU STAY CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "can_stay_after_class",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0179",
+    "english": "you cannot stay after class",
+    "gloss": "AFTER CLASS YOU STAY CAN NOT",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "can_stay_after_class",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0180",
+    "english": "can she stay after class",
+    "gloss": "AFTER CLASS SHE STAY CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "can_stay_after_class",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0181",
+    "english": "do you know the answer now",
+    "gloss": "YOU KNOW ANSWER NOW YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "know_answer_now",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0182",
+    "english": "do you not know the answer now",
+    "gloss": "YOU KNOW ANSWER NOW NOT YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "know_answer_now",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0183",
+    "english": "you know the answer now",
+    "gloss": "YOU KNOW ANSWER NOW",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "know_answer_now",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0184",
+    "english": "you do not know the answer now",
+    "gloss": "YOU KNOW ANSWER NOW NOT",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "know_answer_now",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0185",
+    "english": "does she know the answer now",
+    "gloss": "SHE KNOW ANSWER NOW SHE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "know_answer_now",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0186",
+    "english": "do you have the book today",
+    "gloss": "TODAY YOU HAVE BOOK YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "have_book_today",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0187",
+    "english": "do you not have the book today",
+    "gloss": "TODAY YOU HAVE BOOK NOT YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "have_book_today",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0188",
+    "english": "you have the book today",
+    "gloss": "TODAY YOU HAVE BOOK",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "have_book_today",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0189",
+    "english": "you do not have the book today",
+    "gloss": "TODAY YOU HAVE BOOK NOT",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "have_book_today",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0190",
+    "english": "does he have the book today",
+    "gloss": "TODAY HE HAVE BOOK HE",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "have_book_today",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0191",
+    "english": "do you understand the teacher now",
+    "gloss": "YOU UNDERSTAND TEACHER NOW YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "understand_teacher_now",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0192",
+    "english": "do you not understand the teacher now",
+    "gloss": "YOU UNDERSTAND TEACHER NOW NOT YOU",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "understand_teacher_now",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0193",
+    "english": "you understand the teacher now",
+    "gloss": "YOU UNDERSTAND TEACHER NOW",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "understand_teacher_now",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0194",
+    "english": "you do not understand the teacher now",
+    "gloss": "YOU UNDERSTAND TEACHER NOW NOT",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "understand_teacher_now",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0195",
+    "english": "do they understand the teacher now",
+    "gloss": "THEY UNDERSTAND TEACHER NOW THEY",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "understand_teacher_now",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0196",
+    "english": "can you hear me now",
+    "gloss": "YOU HEAR ME NOW CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "hear_me_now",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0197",
+    "english": "can you not hear me now",
+    "gloss": "YOU HEAR ME NOW NOT CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "hear_me_now",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0198",
+    "english": "you can hear me now",
+    "gloss": "YOU HEAR ME NOW CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "hear_me_now",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0199",
+    "english": "you cannot hear me now",
+    "gloss": "YOU HEAR ME NOW CAN NOT",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "hear_me_now",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  },
+  {
+    "pair_id": "contrastive_0200",
+    "english": "can she hear me now",
+    "gloss": "SHE HEAR ME NOW CAN",
+    "source_kind": "contrastive_generated",
+    "source_files": [
+      "data/asl_gloss_pairs_contrastive_200.json"
+    ],
+    "manual_category": "negation_yesno_contrastive",
+    "contrast_group": "hear_me_now",
+    "contrast_axis": "negation_and_question_form",
+    "notes": "Synthetic contrastive augmentation created to improve semantic discrimination."
+  }
+]

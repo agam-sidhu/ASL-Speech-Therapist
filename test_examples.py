@@ -5,7 +5,6 @@ Run with:
 """
 
 import argparse
-import json
 import sys
 import warnings
 from pathlib import Path
@@ -16,6 +15,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 import torch
 from src.models.inference import load_inference_bundle
+from src.services.asl_pipeline import run_text_to_asl
 warnings.filterwarnings("ignore", category=UserWarning, module="torch")
 
 
@@ -59,22 +59,19 @@ def main():
             print("Goodbye!")
             break
 
-        # Import here to avoid issues if model fails to load
-        from src.models.inference import predict_gloss
-
-        prediction = predict_gloss(
+        result = run_text_to_asl(
             english,
-            bundle,
+            bundle=bundle,
             device=args.device,
             max_len=32,
             beam_width=args.beam_width,
         )
 
         print(f"\n✓ Translation:")
-        print(f"   ASL Gloss: {prediction.predicted_gloss_text}")
-        print(f"   Tokens: {prediction.predicted_gloss_tokens}")
+        print(f"   ASL Gloss: {result['predicted_gloss_text']}")
+        print(f"   Tokens: {result['predicted_gloss_tokens']}")
 
-        if prediction.empty_after_postprocess:
+        if result["empty_after_postprocess"]:
             print(f"   ⚠️  Warning: Output became empty after removing special tokens")
 
 

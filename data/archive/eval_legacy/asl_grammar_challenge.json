@@ -1,0 +1,175 @@
+{
+  "name": "asl_grammar_challenge",
+  "description": "Curated grammar-focused English-to-ASL evaluation subset. Each example is selected from the archived v2 source dataset and manually tagged for the grammar phenomenon it is meant to stress-test.",
+  "source_dataset": "data/archive/asl_gloss_pairs_v2.json",
+  "examples": [
+    {
+      "id": "wh_name_001",
+      "english": "what is your name",
+      "gloss": "YOUR NAME WHAT",
+      "categories": ["wh_question", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 25}
+    },
+    {
+      "id": "wh_location_001",
+      "english": "where are you from",
+      "gloss": "YOU FROM WHERE",
+      "categories": ["wh_question", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 30}
+    },
+    {
+      "id": "wh_need_001",
+      "english": "what do you need",
+      "gloss": "YOU NEED WHAT",
+      "categories": ["wh_question", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 67}
+    },
+    {
+      "id": "wh_reason_001",
+      "english": "why are you late",
+      "gloss": "YOU LATE WHY",
+      "categories": ["wh_question", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 82}
+    },
+    {
+      "id": "time_front_001",
+      "english": "can you help me today",
+      "gloss": "TODAY YOU HELP ME CAN",
+      "categories": ["time_fronting", "strong_reorder"],
+      "source": {"type": "dataset_pair", "index": 36}
+    },
+    {
+      "id": "time_front_002",
+      "english": "i go to school every day",
+      "gloss": "EVERY-DAY I GO SCHOOL",
+      "categories": ["time_fronting", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 161}
+    },
+    {
+      "id": "time_front_003",
+      "english": "the weather is nice today",
+      "gloss": "TODAY WEATHER NICE",
+      "categories": ["time_fronting", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 220}
+    },
+    {
+      "id": "time_front_004",
+      "english": "i learned a new sign today",
+      "gloss": "TODAY I LEARN NEW SIGN",
+      "categories": ["time_fronting", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 303}
+    },
+    {
+      "id": "negation_001",
+      "english": "i do not understand",
+      "gloss": "I NOT UNDERSTAND",
+      "categories": ["negation", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 103}
+    },
+    {
+      "id": "negation_002",
+      "english": "i cannot hear you",
+      "gloss": "I HEAR YOU CAN NOT",
+      "categories": ["negation", "strong_reorder"],
+      "source": {"type": "dataset_pair", "index": 178}
+    },
+    {
+      "id": "negation_003",
+      "english": "do not worry",
+      "gloss": "WORRY NOT",
+      "categories": ["negation", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 264}
+    },
+    {
+      "id": "negation_004",
+      "english": "i did not finish my project",
+      "gloss": "I NOT FINISH MY PROJECT",
+      "categories": ["negation", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 366}
+    },
+    {
+      "id": "yes_no_001",
+      "english": "are you deaf",
+      "gloss": "YOU DEAF YOU",
+      "categories": ["yes_no_question", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 56}
+    },
+    {
+      "id": "yes_no_002",
+      "english": "do you understand",
+      "gloss": "YOU UNDERSTAND YOU",
+      "categories": ["yes_no_question", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 110}
+    },
+    {
+      "id": "yes_no_003",
+      "english": "do you want to go",
+      "gloss": "YOU WANT GO YOU",
+      "categories": ["yes_no_question", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 113}
+    },
+    {
+      "id": "yes_no_004",
+      "english": "do you have time",
+      "gloss": "YOU HAVE TIME YOU",
+      "categories": ["yes_no_question", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 114}
+    },
+    {
+      "id": "topic_comment_001",
+      "english": "my mother is a doctor",
+      "gloss": "MY MOTHER DOCTOR",
+      "categories": ["topic_comment_like", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 151}
+    },
+    {
+      "id": "topic_comment_002",
+      "english": "my favorite color is blue",
+      "gloss": "MY FAVORITE COLOR BLUE",
+      "categories": ["topic_comment_like", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 225}
+    },
+    {
+      "id": "topic_comment_003",
+      "english": "my computer is broken",
+      "gloss": "MY COMPUTER BREAK",
+      "categories": ["topic_comment_like", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 378}
+    },
+    {
+      "id": "locative_001",
+      "english": "where is the bathroom",
+      "gloss": "BATHROOM WHERE",
+      "categories": ["wh_question", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 58}
+    },
+    {
+      "id": "locative_002",
+      "english": "where is the library",
+      "gloss": "LIBRARY WHERE",
+      "categories": ["wh_question", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 62}
+    },
+    {
+      "id": "how_form_001",
+      "english": "how old are you",
+      "gloss": "YOU AGE WHAT",
+      "categories": ["wh_question", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 84}
+    },
+    {
+      "id": "how_form_002",
+      "english": "how long have you lived here",
+      "gloss": "YOU LIVE HERE HOW-LONG",
+      "categories": ["wh_question", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 287}
+    },
+    {
+      "id": "instructional_001",
+      "english": "show me how to sign that",
+      "gloss": "SHOW ME SIGN THAT HOW",
+      "categories": ["wh_question", "strong_reorder", "function_word_drop"],
+      "source": {"type": "dataset_pair", "index": 301}
+    }
+  ]
+}

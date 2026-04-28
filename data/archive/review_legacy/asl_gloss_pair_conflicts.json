@@ -1,0 +1,1244 @@
+[
+  {
+    "conflict_id": "conflict_0015",
+    "english": "can i have the menu",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "MENU HAVE I CAN",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "MENU I CAN HAVE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0024",
+    "english": "can you help me",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "ME HELP YOU CAN",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "YOU HELP ME CAN",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0025",
+    "english": "can you help me today",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "TODAY YOU HELP ME",
+        "source_files": [
+          "data/archive/toy_asl_pairs.json"
+        ]
+      },
+      {
+        "gloss": "TODAY YOU HELP ME CAN",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0027",
+    "english": "can you repeat that",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "THAT REPEAT YOU CAN",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "YOU REPEAT CAN",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0056",
+    "english": "do you have time",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "TIME YOU HAVE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "YOU HAVE TIME YOU",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0074",
+    "english": "do you understand",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "UNDERSTAND YOU",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "YOU UNDERSTAND YOU",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0076",
+    "english": "do you want to go",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "GO YOU WANT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "YOU WANT GO YOU",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0080",
+    "english": "excuse me",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "EXCUSE ME",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "EXCUSE-ME",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0083",
+    "english": "good afternoon",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "AFTERNOON GOOD",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "GOOD AFTERNOON",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0084",
+    "english": "good evening",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "EVENING GOOD",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "GOOD EVENING",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0085",
+    "english": "good morning",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "GOOD MORNING",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json",
+          "data/archive/toy_asl_pairs.json"
+        ]
+      },
+      {
+        "gloss": "MORNING GOOD",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0086",
+    "english": "good night",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "GOOD NIGHT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json",
+          "data/archive/toy_asl_pairs.json"
+        ]
+      },
+      {
+        "gloss": "NIGHT GOOD",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0099",
+    "english": "how are you doing",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "HOW YOU",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "YOU DOING HOW",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0118",
+    "english": "i am a student",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I STUDENT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "STUDENT I",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0119",
+    "english": "i am a teacher",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I TEACHER",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "TEACHER I",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0144",
+    "english": "i am hungry",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "HUNGRY I",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I HUNGRY",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0152",
+    "english": "i am not sure",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I NOT SURE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "SURE I NOT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0163",
+    "english": "i am sorry",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I SORRY",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "SORRY I",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0166",
+    "english": "i am taking medicine",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I TAKE MEDICINE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "MEDICINE I TAKE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0167",
+    "english": "i am thirsty",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I THIRSTY",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "THIRSTY I",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0169",
+    "english": "i am vegetarian",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I VEGETARIAN",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "VEGETARIAN I",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0193",
+    "english": "i do not understand",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I NOT UNDERSTAND",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "UNDERSTAND I NOT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0198",
+    "english": "i drive to work",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I DRIVE WORK",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "WORK I DRIVE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0203",
+    "english": "i feel angry",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "ANGRY I FEEL",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I FEEL ANGRY",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0206",
+    "english": "i feel confused",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "CONFUSED I FEEL",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I FEEL CONFUSED",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0208",
+    "english": "i feel excited",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "EXCITED I FEEL",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I FEEL EXCITED",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0209",
+    "english": "i feel frustrated",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "FRUSTRATED I FEEL",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I FEEL FRUSTRATED",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json",
+          "data/archive/toy_asl_pairs.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0210",
+    "english": "i feel happy",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "HAPPY I FEEL",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I FEEL HAPPY",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json",
+          "data/archive/toy_asl_pairs.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0212",
+    "english": "i feel nervous",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I FEEL NERVOUS",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "NERVOUS I FEEL",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0213",
+    "english": "i feel proud",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I FEEL PROUD",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "PROUD I FEEL",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0215",
+    "english": "i feel sad",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I FEEL SAD",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "SAD I FEEL",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0216",
+    "english": "i feel scared",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I FEEL SCARED",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "SCARED I FEEL",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0217",
+    "english": "i feel sick",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I FEEL SICK",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "SICK I FEEL",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0218",
+    "english": "i feel tired",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I FEEL TIRED",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "TIRED I FEEL",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0228",
+    "english": "i go to school every day",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "EVERY-DAY I GO SCHOOL",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "SCHOOL EVERY-DAY I GO",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0230",
+    "english": "i go to the gym",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "GYM I GO",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I GO GYM",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0240",
+    "english": "i have a cat",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "CAT I HAVE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I HAVE CAT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0241",
+    "english": "i have a cold",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "COLD I HAVE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I HAVE COLD",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0242",
+    "english": "i have a dog",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "DOG I HAVE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I HAVE DOG",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0244",
+    "english": "i have a fever",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "FEVER I HAVE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I HAVE FEVER",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0245",
+    "english": "i have a headache",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "HEAD HURT I HAVE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I HAVE HEADACHE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0252",
+    "english": "i have a stomachache",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I HAVE STOMACHACHE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "STOMACH HURT I HAVE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0263",
+    "english": "i have two brothers",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "BROTHER TWO I HAVE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I HAVE BROTHER TWO",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0271",
+    "english": "i like ice cream",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I LIKE ICE-CREAM",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "ICE-CREAM I LIKE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0281",
+    "english": "i like to cook",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "COOK I LIKE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I LIKE COOK",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0284",
+    "english": "i like to play sports",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I LIKE PLAY SPORT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "SPORT PLAY I LIKE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0286",
+    "english": "i like to read books",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "BOOK READ I LIKE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I LIKE READ BOOK",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0287",
+    "english": "i like to run",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I LIKE RUN",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "RUN I LIKE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0312",
+    "english": "i need help",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "HELP I NEED",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I NEED HELP",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json",
+          "data/archive/toy_asl_pairs.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0313",
+    "english": "i need medicine",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I NEED MEDICINE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "MEDICINE I NEED",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0330",
+    "english": "i play basketball",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "BASKETBALL I PLAY",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I PLAY BASKETBALL",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0345",
+    "english": "i take the bus",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "BUS I TAKE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "I TAKE BUS",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0350",
+    "english": "i think so",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I THINK YES",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "SO THINK I",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0354",
+    "english": "i understand",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "I UNDERSTAND",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "UNDERSTAND I",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0472",
+    "english": "my name is alex",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "MY NAME A-L-E-X",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "MY NAME ALEX",
+        "source_files": [
+          "data/archive/toy_asl_pairs.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0484",
+    "english": "nice to meet you",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "MEET YOU NICE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "NICE MEET YOU",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json",
+          "data/archive/toy_asl_pairs.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0498",
+    "english": "see you later",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "LATER SEE YOU",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "LATER YOU SEE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0499",
+    "english": "see you tomorrow",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "TOMORROW SEE YOU",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      },
+      {
+        "gloss": "TOMORROW YOU SEE",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0511",
+    "english": "thank you",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "THANK YOU",
+        "source_files": [
+          "data/archive/toy_asl_pairs.json"
+        ]
+      },
+      {
+        "gloss": "THANK-YOU",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0513",
+    "english": "thank you very much",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "THANK-YOU VERY MUCH",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "THANK-YOU VERY-MUCH",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0524",
+    "english": "that is interesting",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "INTERESTING THAT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "THAT INTERESTING",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0607",
+    "english": "what color do you like",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "COLOR YOU LIKE WHAT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "YOU LIKE COLOR WHAT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0608",
+    "english": "what day is it",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "DAY WHAT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "TODAY DAY WHAT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0630",
+    "english": "what is your favorite food",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "FOOD FAVORITE YOUR WHAT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "YOUR FAVORITE FOOD WHAT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json"
+        ]
+      }
+    ]
+  },
+  {
+    "conflict_id": "conflict_0633",
+    "english": "what is your name",
+    "variant_count": 2,
+    "variants": [
+      {
+        "gloss": "NAME YOUR WHAT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v3.json"
+        ]
+      },
+      {
+        "gloss": "YOUR NAME WHAT",
+        "source_files": [
+          "data/archive/asl_gloss_pairs_v2.json",
+          "data/archive/toy_asl_pairs.json"
+        ]
+      }
+    ]
+  }
+]

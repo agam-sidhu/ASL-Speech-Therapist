@@ -1,0 +1,1652 @@
+[
+  {
+    "pair_id": "gen_0001",
+    "english": "what time does class start",
+    "gloss": "CLASS START TIME WHAT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0002",
+    "english": "what time do you leave home",
+    "gloss": "HOME LEAVE YOU TIME WHAT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0003",
+    "english": "what chapter are we reading",
+    "gloss": "WE READ CHAPTER WHAT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0004",
+    "english": "what bus do you take",
+    "gloss": "YOU TAKE BUS WHAT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0005",
+    "english": "what room is the meeting in",
+    "gloss": "MEETING ROOM WHAT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0006",
+    "english": "what movie do you want to watch",
+    "gloss": "YOU WANT WATCH MOVIE WHAT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0007",
+    "english": "what snack do you want",
+    "gloss": "YOU WANT SNACK WHAT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0008",
+    "english": "what color is your car",
+    "gloss": "YOUR CAR COLOR WHAT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0009",
+    "english": "what book are you reading",
+    "gloss": "YOU READ BOOK WHAT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0010",
+    "english": "what song is playing",
+    "gloss": "PLAY SONG WHAT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0011",
+    "english": "where did you park the car",
+    "gloss": "YOU PARK CAR WHERE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0012",
+    "english": "where is my notebook",
+    "gloss": "MY NOTEBOOK WHERE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0013",
+    "english": "where should we sit",
+    "gloss": "WE SIT WHERE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0014",
+    "english": "where can i charge my phone",
+    "gloss": "MY PHONE CHARGE WHERE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0015",
+    "english": "where are your glasses",
+    "gloss": "YOUR GLASSES WHERE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0016",
+    "english": "where do they study after class",
+    "gloss": "AFTER CLASS THEY STUDY WHERE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0017",
+    "english": "when does the train arrive",
+    "gloss": "TRAIN ARRIVE WHEN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0018",
+    "english": "when is your appointment",
+    "gloss": "YOUR APPOINTMENT WHEN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0019",
+    "english": "when do you usually eat lunch",
+    "gloss": "YOU USUALLY EAT LUNCH WHEN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0020",
+    "english": "when will the store open",
+    "gloss": "STORE OPEN WHEN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0021",
+    "english": "why is he laughing",
+    "gloss": "HE LAUGH WHY",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0022",
+    "english": "why did they cancel class",
+    "gloss": "THEY CANCEL CLASS WHY",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0023",
+    "english": "why are you in a hurry",
+    "gloss": "YOU HURRY WHY",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0024",
+    "english": "why should i wait outside",
+    "gloss": "I WAIT OUTSIDE WHY",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0025",
+    "english": "how are we getting there",
+    "gloss": "WE GO-TO THERE HOW",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0026",
+    "english": "how long is the movie",
+    "gloss": "MOVIE HOW-LONG",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0027",
+    "english": "how many students are absent",
+    "gloss": "STUDENT ABSENT HOW-MANY",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0028",
+    "english": "how much homework do we have tonight",
+    "gloss": "TONIGHT HOMEWORK HOW-MUCH",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0029",
+    "english": "how often do you practice at home",
+    "gloss": "YOU PRACTICE HOME HOW-OFTEN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0030",
+    "english": "how far is the station",
+    "gloss": "STATION HOW-FAR",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "wh_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0031",
+    "english": "today i need to finish homework",
+    "gloss": "TODAY I NEED FINISH HOMEWORK",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0032",
+    "english": "today the lab is closed",
+    "gloss": "TODAY LAB CLOSED",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0033",
+    "english": "today we practice new signs",
+    "gloss": "TODAY WE PRACTICE NEW SIGN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0034",
+    "english": "today my bus was late",
+    "gloss": "TODAY MY BUS LATE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0035",
+    "english": "today she works at home",
+    "gloss": "TODAY SHE WORK HOME",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0036",
+    "english": "tomorrow we meet the advisor",
+    "gloss": "TOMORROW WE MEET ADVISOR",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0037",
+    "english": "tomorrow i pack my bag",
+    "gloss": "TOMORROW I PACK MY BAG",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0038",
+    "english": "tomorrow the office opens early",
+    "gloss": "TOMORROW OFFICE OPEN EARLY",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0039",
+    "english": "tomorrow my sister visits me",
+    "gloss": "TOMORROW MY SISTER VISIT ME",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0040",
+    "english": "tomorrow we review the chapter",
+    "gloss": "TOMORROW WE REVIEW CHAPTER",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0041",
+    "english": "yesterday i missed the bus",
+    "gloss": "YESTERDAY I MISS BUS",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0042",
+    "english": "yesterday the teacher was absent",
+    "gloss": "YESTERDAY TEACHER ABSENT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0043",
+    "english": "yesterday i cooked dinner",
+    "gloss": "YESTERDAY I COOK DINNER",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0044",
+    "english": "yesterday we stayed home",
+    "gloss": "YESTERDAY WE STAY HOME",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0045",
+    "english": "yesterday my phone died",
+    "gloss": "YESTERDAY MY PHONE DIE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0046",
+    "english": "later i will text you",
+    "gloss": "LATER I TEXT YOU",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0047",
+    "english": "later we discuss the project",
+    "gloss": "LATER WE DISCUSS PROJECT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0048",
+    "english": "later he drives to the store",
+    "gloss": "LATER HE DRIVE STORE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0049",
+    "english": "later i send the notes",
+    "gloss": "LATER I SEND NOTE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0050",
+    "english": "later they call the doctor",
+    "gloss": "LATER THEY CALL DOCTOR",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0051",
+    "english": "now i need water",
+    "gloss": "NOW I NEED WATER",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0052",
+    "english": "now class starts",
+    "gloss": "NOW CLASS START",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0053",
+    "english": "now the store is busy",
+    "gloss": "NOW STORE BUSY",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0054",
+    "english": "now we can leave",
+    "gloss": "NOW WE LEAVE CAN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0055",
+    "english": "now my laptop works",
+    "gloss": "NOW MY LAPTOP WORK",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0056",
+    "english": "every day she practices piano",
+    "gloss": "EVERY-DAY SHE PRACTICE PIANO",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0057",
+    "english": "every day we eat together",
+    "gloss": "EVERY-DAY WE EAT TOGETHER",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0058",
+    "english": "every day my hands hurt",
+    "gloss": "EVERY-DAY MY HAND HURT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0059",
+    "english": "morning i walk my dog",
+    "gloss": "MORNING I WALK MY DOG",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0060",
+    "english": "night we study together",
+    "gloss": "NIGHT WE STUDY TOGETHER",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0061",
+    "english": "i do not remember the address",
+    "gloss": "I NOT REMEMBER ADDRESS",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0062",
+    "english": "she is not available today",
+    "gloss": "TODAY SHE AVAILABLE NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0063",
+    "english": "we cannot stay long",
+    "gloss": "WE STAY LONG CAN NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0064",
+    "english": "they did not bring tickets",
+    "gloss": "THEY BRING TICKET NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0065",
+    "english": "i never eat meat",
+    "gloss": "I NEVER EAT MEAT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0066",
+    "english": "the printer is not working",
+    "gloss": "PRINTER WORK NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0067",
+    "english": "i am not ready yet",
+    "gloss": "I READY NOT YET",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0068",
+    "english": "he does not drive",
+    "gloss": "HE DRIVE NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0069",
+    "english": "my laptop is not charged",
+    "gloss": "MY LAPTOP CHARGE NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0070",
+    "english": "we do not have enough chairs",
+    "gloss": "WE HAVE CHAIR ENOUGH NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0071",
+    "english": "i cannot find my keys",
+    "gloss": "I FIND MY KEY CAN NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0072",
+    "english": "she did not call me",
+    "gloss": "SHE CALL ME NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0073",
+    "english": "they are not finished",
+    "gloss": "THEY FINISH NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0074",
+    "english": "i do not want coffee",
+    "gloss": "I NOT WANT COFFEE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0075",
+    "english": "the bus is not here yet",
+    "gloss": "BUS HERE NOT YET",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0076",
+    "english": "i never saw that sign before",
+    "gloss": "I SEE THAT SIGN NEVER BEFORE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0077",
+    "english": "the teacher is not in the office",
+    "gloss": "TEACHER OFFICE NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0078",
+    "english": "i cannot open the door",
+    "gloss": "I OPEN DOOR CAN NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0079",
+    "english": "the battery is not full",
+    "gloss": "BATTERY FULL NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0080",
+    "english": "we are not late",
+    "gloss": "WE LATE NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0081",
+    "english": "i do not trust that answer",
+    "gloss": "I NOT TRUST THAT ANSWER",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0082",
+    "english": "she cannot hear the music",
+    "gloss": "SHE HEAR MUSIC CAN NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0083",
+    "english": "they never practice at home",
+    "gloss": "THEY HOME PRACTICE NEVER",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0084",
+    "english": "i am not hungry anymore",
+    "gloss": "I HUNGRY NOT ANYMORE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0085",
+    "english": "the water is not cold",
+    "gloss": "WATER COLD NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0086",
+    "english": "we do not understand the instructions",
+    "gloss": "WE NOT UNDERSTAND INSTRUCTION",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0087",
+    "english": "he is not my partner",
+    "gloss": "HE MY PARTNER NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0088",
+    "english": "i cannot sleep tonight",
+    "gloss": "TONIGHT I SLEEP CAN NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0089",
+    "english": "the store is not open now",
+    "gloss": "STORE OPEN NOT NOW",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0090",
+    "english": "i did not finish reading",
+    "gloss": "I FINISH READ NOT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0091",
+    "english": "are you ready now",
+    "gloss": "YOU READY NOW YOU",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0092",
+    "english": "did he call today",
+    "gloss": "HE CALL TODAY HE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0093",
+    "english": "can we start the meeting",
+    "gloss": "WE START MEETING CAN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0094",
+    "english": "do they need help",
+    "gloss": "THEY NEED HELP THEY",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0095",
+    "english": "are you busy tonight",
+    "gloss": "YOU BUSY TONIGHT YOU",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0096",
+    "english": "did you lock the door",
+    "gloss": "YOU LOCK DOOR YOU",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0097",
+    "english": "can she come tomorrow",
+    "gloss": "SHE COME TOMORROW CAN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0098",
+    "english": "are they home already",
+    "gloss": "THEY HOME ALREADY THEY",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0099",
+    "english": "do you want tea",
+    "gloss": "YOU WANT TEA YOU",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0100",
+    "english": "are we early",
+    "gloss": "WE EARLY WE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0101",
+    "english": "can he drive now",
+    "gloss": "HE DRIVE NOW CAN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0102",
+    "english": "do you see the screen",
+    "gloss": "YOU SEE SCREEN YOU",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0103",
+    "english": "is your phone okay",
+    "gloss": "YOUR PHONE OKAY YOU",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0104",
+    "english": "can they wait outside",
+    "gloss": "THEY WAIT OUTSIDE CAN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0105",
+    "english": "do you remember me",
+    "gloss": "YOU REMEMBER ME YOU",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0106",
+    "english": "can i sit here",
+    "gloss": "I SIT HERE CAN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0107",
+    "english": "did we miss the train",
+    "gloss": "WE MISS TRAIN WE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0108",
+    "english": "are your hands cold",
+    "gloss": "YOUR HAND COLD YOU",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0109",
+    "english": "can you stay longer",
+    "gloss": "YOU STAY LONGER CAN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0110",
+    "english": "does she know the address",
+    "gloss": "SHE KNOW ADDRESS SHE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0111",
+    "english": "did they finish homework",
+    "gloss": "THEY FINISH HOMEWORK THEY",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0112",
+    "english": "is he your teacher",
+    "gloss": "HE YOUR TEACHER HE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0113",
+    "english": "do i need a ticket",
+    "gloss": "I NEED TICKET I",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0114",
+    "english": "can we leave now",
+    "gloss": "WE LEAVE NOW CAN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0115",
+    "english": "are you feeling better",
+    "gloss": "YOU FEEL BETTER YOU",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0116",
+    "english": "did she send the email",
+    "gloss": "SHE SEND EMAIL SHE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0117",
+    "english": "can you repeat that slowly",
+    "gloss": "YOU REPEAT THAT SLOW CAN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0118",
+    "english": "are they waiting outside",
+    "gloss": "THEY WAIT OUTSIDE THEY",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0119",
+    "english": "do you hear the alarm",
+    "gloss": "YOU HEAR ALARM YOU",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0120",
+    "english": "can he help us later",
+    "gloss": "HE HELP US LATER CAN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0121",
+    "english": "i need the red folder",
+    "gloss": "RED FOLDER I NEED",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0122",
+    "english": "i understand your idea",
+    "gloss": "YOUR IDEA I UNDERSTAND",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0123",
+    "english": "we like that restaurant",
+    "gloss": "THAT RESTAURANT WE LIKE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0124",
+    "english": "i enjoy math class",
+    "gloss": "MATH CLASS I ENJOY",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0125",
+    "english": "i want coffee now",
+    "gloss": "COFFEE I WANT NOW",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0126",
+    "english": "i know the answer",
+    "gloss": "ANSWER I KNOW",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0127",
+    "english": "i found my keys under the table",
+    "gloss": "MY KEY UNDER TABLE I FIND",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0128",
+    "english": "she already watched that movie",
+    "gloss": "THAT MOVIE SHE WATCH ALREADY",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0129",
+    "english": "my teacher recommended this book",
+    "gloss": "THIS BOOK MY TEACHER RECOMMEND",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0130",
+    "english": "i moved the blue chair",
+    "gloss": "BLUE CHAIR I MOVE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0131",
+    "english": "i can answer your question",
+    "gloss": "YOUR QUESTION I ANSWER CAN",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0132",
+    "english": "i forgot the bus route",
+    "gloss": "BUS ROUTE I FORGET",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0133",
+    "english": "my left hand still hurts",
+    "gloss": "MY LEFT HAND STILL HURT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0134",
+    "english": "i submitted the online form",
+    "gloss": "ONLINE FORM I SUBMIT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0135",
+    "english": "i saved this address",
+    "gloss": "THIS ADDRESS I SAVE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0136",
+    "english": "he locked the front door",
+    "gloss": "FRONT DOOR HE LOCK",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0137",
+    "english": "my sister's apartment is small",
+    "gloss": "MY SISTER APARTMENT SMALL",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0138",
+    "english": "i put your notebook on the desk",
+    "gloss": "YOUR NOTEBOOK DESK ON I PUT",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0139",
+    "english": "i already bought the train ticket",
+    "gloss": "TRAIN TICKET I BUY ALREADY",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0140",
+    "english": "i left my wallet in the car",
+    "gloss": "MY WALLET CAR IN I LEAVE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0141",
+    "english": "i like this soup more",
+    "gloss": "THIS SOUP I LIKE MORE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0142",
+    "english": "i missed the email attachment",
+    "gloss": "EMAIL ATTACHMENT I MISS",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0143",
+    "english": "i remember your name now",
+    "gloss": "YOUR NAME I REMEMBER NOW",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0144",
+    "english": "i finished that homework early",
+    "gloss": "THAT HOMEWORK I FINISH EARLY",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0145",
+    "english": "my doctor appointment is next month",
+    "gloss": "MY DOCTOR APPOINTMENT NEXT-MONTH",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0146",
+    "english": "we solve this problem together",
+    "gloss": "THIS PROBLEM WE SOLVE TOGETHER",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0147",
+    "english": "science is my favorite class",
+    "gloss": "MY FAVORITE CLASS SCIENCE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0148",
+    "english": "i saw your jacket on the chair",
+    "gloss": "YOUR JACKET CHAIR ON I SEE",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0149",
+    "english": "i kept the parking ticket",
+    "gloss": "PARKING TICKET I KEEP",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  },
+  {
+    "pair_id": "gen_0150",
+    "english": "i remember your coffee order",
+    "gloss": "YOUR COFFEE ORDER I REMEMBER",
+    "source_kind": "generated_augmentation",
+    "source_files": [
+      "data/archive/asl_gloss_pairs_generated_150.json"
+    ],
+    "manual_category": "topic_comment_or_reordering",
+    "notes": "Synthetic augmentation created for grammar-focused training expansion."
+  }
+]

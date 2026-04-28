@@ -44,6 +44,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--device", default="cpu", help="Model inference device: cpu or cuda")
     parser.add_argument("--max_len", type=int, default=32)
+    parser.add_argument("--beam_width", type=int, default=1, help="Beam search width. 1 = greedy decoding.")
     parser.add_argument("--keep_fillers", action="store_true")
     parser.add_argument(
         "--use_fallback",
@@ -60,67 +61,30 @@ def parse_args() -> argparse.Namespace:
 
 
 def run_pipeline(args: argparse.Namespace) -> dict:
-    from src.asl.fallback_rules import fallback_text_to_gloss
-    from src.audio.asr import transcribe_audio
-    from src.audio.preprocess_audio import preprocess_audio_to_mono16k
-    #from src.audio.record_audio import record_from_microphone
-    from src.models.inference import load_inference_bundle, predict_gloss
-    from src.nlp.normalize_text import normalize_text
-
-    if args.mic:
-        from src.audio.record_audio import record_from_microphone
-        audio_path = record_from_microphone()
-    else:
-        audio_path = args.audio_file
-
-    processed_audio_path = preprocess_audio_to_mono16k(audio_path)
-
-    asr_result = transcribe_audio(
-        processed_audio_path,
-        model_size=args.model_size,
-        device=args.asr_device,
-        compute_type=args.compute_type,
-    )
-
-    normalization_result = normalize_text(
-        asr_result["raw_transcript"],
-        remove_fillers=not args.keep_fillers,
-    )
+    from src.services.asl_pipeline import run_audio_to_asl
 
     if args.use_fallback:
-        fallback = fallback_text_to_gloss(normalization_result["tokens"])
-        return {
-            "audio_path": audio_path,
-            "processed_audio_path": processed_audio_path,
-            "raw_transcript": asr_result["raw_transcript"],
-            "language": asr_result["language"],
-            "confidence": asr_result["confidence"],
-            "clean_text": normalization_result["clean_text"],
-            "predicted_gloss_tokens": fallback["predicted_gloss_tokens"],
-            "predicted_gloss_text": fallback["predicted_gloss_text"],
-            "model_name": "fallback_rules",
-            "used_fallback": True,
-            "empty_after_postprocess": len(fallback["predicted_gloss_tokens"]) == 0,
-        }
+        bundle = None
+    else:
+        from src.models.inference import load_inference_bundle
 
-    bundle = load_inference_bundle(args.checkpoint, device=args.device)
-    prediction = predict_gloss(
-        normalization_result["clean_text"],
+        bundle = load_inference_bundle(args.checkpoint, device=args.device)
+    return run_audio_to_asl(
+        audio_file=args.audio_file,
+        use_microphone=args.mic,
+        duration=args.duration,
+        model_size=args.model_size,
+        asr_device=args.asr_device,
+        compute_type=args.compute_type,
         bundle=bundle,
+        checkpoint=args.checkpoint if bundle is None else None,
         device=args.device,
         max_len=args.max_len,
+        beam_width=args.beam_width,
         debug=args.debug,
+        use_fallback=args.use_fallback,
+        keep_fillers=args.keep_fillers,
     )
-
-    output = {
-        "audio_path": audio_path,
-        "processed_audio_path": processed_audio_path,
-        "raw_transcript": asr_result["raw_transcript"],
-        "language": asr_result["language"],
-        "confidence": asr_result["confidence"],
-    }
-    output.update(prediction.to_dict())
-    return output
 
 
 def main() -> None:

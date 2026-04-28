@@ -1,0 +1,10 @@
+{
+  "base_dataset": "data/asl_gloss_conversational.json",
+  "base_pair_count": 639,
+  "generated_dataset": "data/archive/asl_gloss_pairs_generated_150.json",
+  "generated_pair_count": 150,
+  "final_master_pair_count": 789,
+  "output_files": {
+    "master_dataset": "data/asl_gloss_pairs_master.json"
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "summary": {
+    "dataset": "data/asl_gloss_pairs_master_plus_contrastive.json",
+    "checkpoint": "checkpoints/aslg_pc12_only/best_model.pt",
+    "split": "test",
+    "total_samples": 102,
+    "beam_width": 3,
+    "split_config": {
+      "val_split": 0.15,
+      "test_split": 0.1,
+      "seed": 42
+    },
+    "corpus_bleu": 0.0,
+    "exact_match_rate": 0.0,
+    "aligned_token_accuracy": 0.0137,
+    "token_overlap_f1": 0.0333,
+    "well_formed_rate": 1.0,
+    "english_copy_rate": 0.0196,
+    "function_word_leak_rate": 0.8333,
+    "reorder_case_count": 47,
+    "reorder_success_rate": 0.0,
+    "category_summary": {
+      "deletion_or_subset": {
+        "count": 27,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2928,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 0.8889,
+        "reorder_success_rate": null
+      },
+      "exact_copy": {
+        "count": 10,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2817,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 0.8,
+        "reorder_success_rate": null
+      },
+      "function_word_drop": {
+        "count": 64,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2593,
+        "english_copy_rate": 0.0156,
+        "function_word_leak_rate": 0.875,
+        "reorder_success_rate": 0.0
+      },
+      "function_word_retained": {
+        "count": 14,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2521,
+        "english_copy_rate": 0.0714,
+        "function_word_leak_rate": 0.8571,
+        "reorder_success_rate": 0.0
+      },
+      "mild_reorder": {
+        "count": 2,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.3442,
+        "english_copy_rate": 0.5,
+        "function_word_leak_rate": 0.5,
+        "reorder_success_rate": 0.0
+      },
+      "negation": {
+        "count": 8,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2361,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 1.0,
+        "reorder_success_rate": 0.0
+      },
+      "strong_reorder": {
+        "count": 45,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2419,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 0.8444,
+        "reorder_success_rate": 0.0
+      },
+      "time_fronting": {
+        "count": 17,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2093,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 0.7647,
+        "reorder_success_rate": 0.0
+      },
+      "topic_comment_like": {
+        "count": 8,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2332,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 1.0,
+        "reorder_success_rate": null
+      },
+      "wh_question": {
+        "count": 8,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2522,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 1.0,
+        "reorder_success_rate": 0.0
+      },
+      "yes_no_question": {
+        "count": 15,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.227,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 0.8667,
+        "reorder_success_rate": 0.0
+      }
+    }
+  },
+  "examples": [
+    {
+      "english": "my computer is new",
+      "reference": "MY COMPUTER NEW",
+      "predicted": "THIS BE DESC-NOT",
+      "notes": [
+        "retained_function_words",
+        "missing:MY,COMPUTER,NEW",
+        "extra:THIS,BE,DESC-NOT"
+      ],
+      "categories": [
+        "deletion_or_subset",
+        "function_word_drop",
+        "topic_comment_like"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.3195
+    },
+    {
+      "english": "can i call you",
+      "reference": "YOU CALL I CAN",
+      "predicted": "X-I WOULD LIKE",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:YOU,CALL,I",
+        "extra:X-I,WOULD,LIKE"
+      ],
+      "categories": [
+        "strong_reorder",
+        "function_word_retained",
+        "yes_no_question"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2289
+    },
+    {
+      "english": "i am hungry",
+      "reference": "I HUNGRY",
+      "predicted": "X-I BE DESC-VERY",
+      "notes": [
+        "retained_function_words",
+        "missing:I,HUNGRY",
+        "extra:X-I,BE,DESC-VERY"
+      ],
+      "categories": [
+        "deletion_or_subset",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.3195
+    },
+    {
+      "english": "i remember your name now",
+      "reference": "YOUR NAME I REMEMBER NOW",
+      "predicted": "X-I WOULD LIKE",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:YOUR,NAME,I",
+        "extra:X-I,WOULD,LIKE"
+      ],
+      "categories": [
+        "strong_reorder"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.164
+    },
+    {
+      "english": "how often do you practice at home",
+      "reference": "YOU PRACTICE HOME HOW-OFTEN",
+      "predicted": "X-YOU X-YOU HAVE DESC-VERY X-YOU DESC-VERY X-YOU",
+      "notes": [
+        "missing:YOU,PRACTICE,HOME",
+        "extra:X-YOU,X-YOU,HAVE"
+      ],
+      "categories": [
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.1562
+    },
+    {
+      "english": "my friend works at the hospital",
+      "reference": "MY FRIEND HOSPITAL WORK",
+      "predicted": "THIS BE DESC-VERY",
+      "notes": [
+        "retained_function_words",
+        "missing:MY,FRIEND,HOSPITAL",
+        "extra:THIS,BE,DESC-VERY"
+      ],
+      "categories": [
+        "function_word_drop",
+        "topic_comment_like"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.2289
+    },
+    {
+      "english": "did she send the email",
+      "reference": "SHE SEND EMAIL SHE",
+      "predicted": "EUROPEAN UNION",
+      "notes": [
+        "missed_reference_reordering",
+        "missing:SHE,SEND,EMAIL",
+        "extra:EUROPEAN,UNION"
+      ],
+      "categories": [
+        "strong_reorder",
+        "function_word_drop",
+        "yes_no_question"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.1357
+    },
+    {
+      "english": "the red book is near the table",
+      "reference": "TABLE NEAR RED BOOK",
+      "predicted": "THIS BE NO",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:TABLE,NEAR,RED",
+        "extra:THIS,BE,NO"
+      ],
+      "categories": [
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2289
+    },
+    {
+      "english": "i moved the blue chair",
+      "reference": "BLUE CHAIR I MOVE",
+      "predicted": "X-I WOULD LIKE",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:BLUE,CHAIR,I",
+        "extra:X-I,WOULD,LIKE"
+      ],
+      "categories": [
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2289
+    },
+    {
+      "english": "today i work downtown",
+      "reference": "TODAY I WORK DOWNTOWN",
+      "predicted": "X-I WOULD LIKE",
+      "notes": [
+        "retained_function_words",
+        "missing:TODAY,I,WORK",
+        "extra:X-I,WOULD,LIKE"
+      ],
+      "categories": [
+        "exact_copy",
+        "time_fronting"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.2289
+    },
+    {
+      "english": "i write your name",
+      "reference": "I WRITE YOUR NAME",
+      "predicted": "X-I WOULD LIKE",
+      "notes": [
+        "retained_function_words",
+        "missing:I,WRITE,YOUR",
+        "extra:X-I,WOULD,LIKE"
+      ],
+      "categories": [
+        "exact_copy"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.2289
+    },
+    {
+      "english": "i will meet you there",
+      "reference": "I MEET YOU THERE",
+      "predicted": "X-I WOULD LIKE",
+      "notes": [
+        "retained_function_words",
+        "missing:I,MEET,YOU",
+        "extra:X-I,WOULD,LIKE"
+      ],
+      "categories": [
+        "deletion_or_subset",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.2289
+    },
+    {
+      "english": "what is your phone number",
+      "reference": "PHONE NUMBER YOUR WHAT",
+      "predicted": "DESC-RE BE WHAT",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:PHONE,NUMBER,YOUR",
+        "extra:DESC-RE,BE"
+      ],
+      "categories": [
+        "strong_reorder",
+        "function_word_drop",
+        "wh_question"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.246
+    },
+    {
+      "english": "what is your favorite food",
+      "reference": "YOUR FAVORITE FOOD WHAT",
+      "predicted": "DESC-RE BE DESC-NOT",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:YOUR,FAVORITE,FOOD",
+        "extra:DESC-RE,BE,DESC-NOT"
+      ],
+      "categories": [
+        "strong_reorder",
+        "function_word_drop",
+        "wh_question"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2289
+    },
+    {
+      "english": "are you not ready",
+      "reference": "YOU READY NOT YOU",
+      "predicted": "X-YOU BE DESC-NOT",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:YOU,READY,NOT",
+        "extra:X-YOU,BE,DESC-NOT"
+      ],
+      "categories": [
+        "strong_reorder",
+        "function_word_drop",
+        "negation",
+        "yes_no_question"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2289
+    },
+    {
+      "english": "i run five miles",
+      "reference": "MILE FIVE RUN I",
+      "predicted": "X-I WOULD LIKE",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:MILE,FIVE,RUN",
+        "extra:X-I,WOULD,LIKE"
+      ],
+      "categories": [
+        "strong_reorder"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2289
+    },
+    {
+      "english": "i will wait for you",
+      "reference": "I WAIT YOU",
+      "predicted": "X-I WOULD LIKE",
+      "notes": [
+        "retained_function_words",
+        "missing:I,WAIT,YOU",
+        "extra:X-I,WOULD,LIKE"
+      ],
+      "categories": [
+        "deletion_or_subset",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.3195
+    },
+    {
+      "english": "it is very hot",
+      "reference": "VERY HOT",
+      "predicted": "X-IT BE DESC-VERY",
+      "notes": [
+        "retained_function_words",
+        "missing:VERY,HOT",
+        "extra:X-IT,BE,DESC-VERY"
+      ],
+      "categories": [
+        "deletion_or_subset",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.3195
+    },
+    {
+      "english": "i have been studying for two hours",
+      "reference": "I STUDY TWO HOUR",
+      "predicted": "X-I HAVE BE DESC-VERY FOR X-YOU",
+      "notes": [
+        "retained_function_words",
+        "missing:I,STUDY,TWO",
+        "extra:X-I,HAVE,BE"
+      ],
+      "categories": [
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.1858
+    },
+    {
+      "english": "i am sad",
+      "reference": "I SAD",
+      "predicted": "X-I THINK",
+      "notes": [
+        "missing:I,SAD",
+        "extra:X-I,THINK"
+      ],
+      "categories": [
+        "deletion_or_subset",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.3689
+    }
+  ]
+}

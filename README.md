@@ -12,10 +12,49 @@ This refactor changes the core design to match the real research/engineering goa
 
 The key architectural decision is that **English-to-ASL is now modeled as a learned sequence prediction task**, not a dictionary/rule system.
 
+## Demo Gloss Translation Model
+
+The demo checkpoint is:
+
+```text
+checkpoints/project_finetune_v2_v4_contrastive/best_model.pt
+```
+
+It performs:
+
+```text
+English text -> ASL gloss
+```
+
+Example:
+
+```text
+i need help -> I NEED HELP
+```
+
+It does not perform video-to-sign recognition. Webcam classification issues such as `HELP -> RICH 88%` come from the vision model path, not this text-to-gloss model.
+
+Quick local demo:
+
+```bash
+python scripts/demo_gloss_translate.py --text "i need help"
+```
+
+Frontend integration notes are in [docs/gloss_model_integration.md](docs/gloss_model_integration.md).
+
+## Scope Boundaries
+
+- `src/services/`, `src/audio/`, `src/nlp/`, `src/models/`, `src/data/`, `src/evaluation/`, and `src/training/` are the audio/text -> ASL translation side.
+- `src/ASL_visual_recognition/` is preserved for the separate vision-based sign-recognition track. This repo cleanup does not delete or rewrite that module.
+- WLASL belongs to the later sign/gloss mapping side, not ASR training.
+
 ## New Architecture
 
 ```text
 src/
+  services/
+    asl_pipeline.py            # shared runtime service used by CLI/demo scripts
+
   audio/
     record_audio.py
     preprocess_audio.py
@@ -39,11 +78,20 @@ src/
     dataset.py
     preprocess_dataset.py
     collate.py
+    splits.py
 
   training/
     train.py
     evaluate.py
     losses.py
+
+  evaluation/
+    audit_translation_dataset.py
+    evaluate_translation.py
+    evaluate_grammar_challenge.py
+    evaluate_asr.py
+    translation_analysis.py
+    asr_metrics.py
 
   pipeline/
     run_audio_pipeline.py
@@ -54,9 +102,13 @@ src/
     io.py
     seed.py
 
+  ASL_visual_recognition/      # preserved vision assets / teammate-owned track
+
 data/
-  examples/
-    toy_asl_pairs.json
+  raw/                           # raw ASLG-PC12 and v2/v4 project provenance
+  active/                        # final training datasets
+  reports/                       # reproducible data build report
+  archive/                       # historical unused files, including v3
 
 requirements.txt
 README.md
@@ -110,46 +162,44 @@ Paired records are expected in JSON/JSONL/CSV with fields:
 }
 ```
 
-Datasets available:
+Active datasets:
 
-- **Toy dataset** (16 pairs): `data/examples/toy_asl_pairs.json` (for sanity checks only)
-- **Expanded dataset** (396 pairs): `data/asl_gloss_pairs_v2.json` (recommended for training)
+- **Pretraining**: `data/active/aslg_pc12_pretrain.json`
+- **Fine-tuning/demo**: `data/active/project_finetune_v2_v4_contrastive.json`
 
-The expanded dataset covers diverse conversational phrases, questions, commands, and learning contexts with proper ASL grammar (topic-comment structure, WH-questions, copula/article deletion).
+Raw inputs live in `data/raw/`. Historical files, including v3, live in `data/archive/` and are not read by the active pipeline. v3 is archived because it introduced conflicting ASL gloss order.
+
+Rebuild active data:
+
+```bash
+python scripts/run_full_pipeline.py --stage build-data
+```
 
 ## How To Train
 
-**Recommended: Train on expanded dataset with improved hyperparameters**
+**Pretrain on ASLG-PC12**
 
 ```bash
-python src/training/train.py \
-  --dataset data/asl_gloss_pairs_v2.json \
-  --epochs 80 --batch_size 16 --lr 5e-4 \
-  --d_model 128 --nhead 4 \
-  --num_encoder_layers 2 --num_decoder_layers 2 \
-  --dim_feedforward 256 --dropout 0.15 \
-  --grad_clip 1.0 --label_smoothing 0.1 \
-  --warmup_epochs 8 --val_split 0.15 --device cpu
+python scripts/run_full_pipeline.py --stage pretrain
 ```
 
-This configuration:
+**Fine-tune on clean v2+v4 project data**
 
-- Uses 85/15 train/validation split on 396 pairs
+```bash
+python scripts/run_full_pipeline.py --stage finetune
+```
+
+The fine-tuning dataset includes clean v2+v4 conversational pairs, 150 generated augmentation pairs, and 200 contrastive pairs.
+
+Training still uses:
+
+- Uses reproducible train/validation/test partitioning when `--test_split` is enabled
 - Larger model (128-dim embeddings, 2 encoder/decoder layers)
 - Cosine annealing learning rate with 8-epoch warmup
 - Gradient clipping (max norm 1.0) for stability
 - Label smoothing (0.1) for better generalization
-- Takes ~30-40 minutes on CPU, saves checkpoint to `checkpoints/best_model.pt`
-
-**Toy Dataset (for quick sanity checks)**
-
-```bash
-python src/training/train.py \
-  --dataset data/examples/toy_asl_pairs.json \
-  --epochs 25 \
-  --batch_size 4 \
-  --device cpu
-```
+- Pretraining checkpoint: `checkpoints/aslg_pc12_pretrain/best_model.pt`
+- Fine-tuned checkpoint: `checkpoints/project_finetune_v2_v4_contrastive/best_model.pt`
 
 ## Overfit Sanity-Check Mode
 
@@ -157,7 +207,8 @@ Use this to verify the model can memorize tiny data:
 
 ```bash
 python src/training/train.py \
-  --dataset data/examples/toy_asl_pairs.json \
+  --mode finetune \
+  --dataset data/active/project_finetune_v2_v4_contrastive.json \
   --epochs 200 \
   --batch_size 2 \
   --device cpu \
@@ -247,8 +298,8 @@ Run full evaluation on entire dataset with BLEU scores:
 
 ```bash
 python src/training/evaluate_checkpoint.py \
-  --checkpoint checkpoints/best_model.pt \
-  --dataset data/asl_gloss_pairs_v2.json \
+  --checkpoint checkpoints/project_finetune_v2_v4_contrastive/best_model.pt \
+  --dataset data/active/project_finetune_v2_v4_contrastive.json \
   --beam_width 3 \
   --show_examples 20
 ```
@@ -282,6 +333,11 @@ Debug JSON fields include:
 - `cleaned_gloss_tokens`
 - `empty_after_postprocess`
 
+Runtime JSON also includes:
+
+- `normalized_tokens`
+- `gloss_items` with per-token `lookup_key` values for later sign mapping
+
 ## How To Run Audio Inference
 
 Microphone mode:
@@ -309,6 +365,104 @@ Pipeline:
 
 `mic/audio -> preprocess (mono 16kHz) -> Whisper ASR -> normalize -> learned model inference`
 
+The shared runtime source of truth is `src/services/asl_pipeline.py`, which exposes:
+
+- `run_text_to_asl(...)`
+- `run_audio_to_asl(...)`
+
+CLI wrappers in `src/pipeline/` are intentionally thin wrappers around that service.
+
+## Translation Evaluation
+
+Use the translation evaluator for overlap metrics plus grammar-oriented diagnostics:
+
+```bash
+python src/evaluation/evaluate_translation.py \
+  --checkpoint checkpoints/project_finetune_v2_v4_contrastive/best_model.pt \
+  --dataset data/active/project_finetune_v2_v4_contrastive.json \
+  --beam_width 3 \
+  --split all
+```
+
+This reports:
+
+- corpus BLEU
+- exact match
+- aligned token accuracy
+- token-overlap F1
+- English-order copy rate
+- function-word leak rate
+- reorder-sensitive case count
+- reference-order success on reorder-sensitive cases
+- category breakdown using either inferred dataset categories or curated challenge tags
+
+## Grammar Challenge Evaluation
+
+Use the curated challenge set to stress-test grammar phenomena directly:
+
+```bash
+python src/evaluation/evaluate_grammar_challenge.py \
+  --checkpoint checkpoints/best_model.pt \
+  --beam_width 3 \
+  --show_failures_only
+```
+
+The challenge set focuses on:
+
+- WH-questions
+- yes/no question endings
+- negation
+- time-fronting
+- function-word deletion
+- topic-comment-like possessive phrases
+- strong English-to-gloss reordering
+
+## Dataset Audit
+
+Audit the paired data itself before claiming the model has learned ASL grammar:
+
+```bash
+python src/evaluation/audit_translation_dataset.py \
+  --dataset data/active/project_finetune_v2_v4_contrastive.json \
+  --val_split 0.15 \
+  --test_split 0.10
+```
+
+This reports:
+
+- corpus size and vocabulary size
+- source/target length statistics
+- counts of copy/reorder/function-word-drop style patterns
+- coarse grammar-template frequencies
+- repeated gloss forms
+- split-overlap risk under the current split configuration
+- example pairs for each detected grammar category
+
+## ASR Evaluation
+
+The repo currently treats ASR as inference-only. You can still evaluate transcript quality on labeled audio using a manifest file with `audio_path` and `reference_text`:
+
+```bash
+python src/evaluation/evaluate_asr.py \
+  --manifest your_asr_manifest.json \
+  --model_size base
+```
+
+This reports:
+
+- WER
+- CER
+- transcript examples with normalized reference/hypothesis text
+
+Manifest records should contain:
+
+```json
+{
+  "audio_path": "path/to/example.wav",
+  "reference_text": "where is the bathroom"
+}
+```
+
 ## Fallback Rules (Debug Only)
 
 A fallback module exists in `src/asl/fallback_rules.py` for debugging and comparison.
@@ -329,7 +483,7 @@ python src/pipeline/run_text_inference.py --text "hello" --use_fallback
 
 ## Model Performance
 
-**Current Results (Expanded Dataset)**
+**Historical Baseline Results (Older v2 Dataset)**
 
 - **Corpus BLEU**: 0.8674
 - **Exact Match Accuracy**: 82.3% (326/396 examples)
@@ -348,10 +502,11 @@ The model successfully learns ASL grammatical patterns including:
 ## Current Limitations
 
 - Gloss text output only (not sign video/animation)
+- ASR is inference-only in this repo; no Whisper training/fine-tuning pipeline is included
 - No phoneme-level pronunciation scoring yet
 - No computer-vision sign feedback yet
 - Greedy + beam search decoding (no advanced techniques like length normalization tuning)
-- Limited to ~400 training examples
+- Still limited by small-to-medium paired data, with heavy template overlap across random splits even after cleanup
 
 ## Future Extensions
 

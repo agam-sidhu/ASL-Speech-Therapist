@@ -1,0 +1,34 @@
+{
+  "master_dataset": "data/asl_gloss_pairs_master.json",
+  "validated_against": [
+    "data/asl_gloss_pairs_master.json"
+  ],
+  "contrastive_pair_count": 200,
+  "contrastive_category_counts": {
+    "family_people_professions": 50,
+    "time_daily_activity": 40,
+    "sensory_understanding_communication": 35,
+    "location_object_descriptive_relations": 35,
+    "negation_yesno_contrastive": 40
+  },
+  "contrast_group_count": 40,
+  "average_contrast_group_size": 5.0,
+  "contrast_axis_counts": {
+    "family_member": 50,
+    "time_reference": 40,
+    "verb_choice": 30,
+    "object_choice": 5,
+    "relation": 10,
+    "location_reference": 5,
+    "adjective": 10,
+    "reference_place": 5,
+    "color": 5,
+    "negation_and_question_form": 40
+  },
+  "duplicates_removed_when_merging": 0,
+  "master_plus_contrastive_count": 989,
+  "output_files": {
+    "contrastive": "data/asl_gloss_pairs_contrastive_200.json",
+    "master_plus_contrastive": "data/asl_gloss_pairs_master_plus_contrastive.json"
+  }
+}
