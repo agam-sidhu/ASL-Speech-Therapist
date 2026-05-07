@@ -1,4 +1,7 @@
-"""Speech-to-text transcription using faster-whisper."""
+"""Speech-to-text transcription using faster-whisper.
+
+This module is inference-only in the current repo.
+"""
 
 from __future__ import annotations
 

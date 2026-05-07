@@ -9,7 +9,6 @@ Or test specific categories:
 """
 
 import argparse
-import json
 import sys
 from pathlib import Path
 from typing import Dict, List, Tuple
@@ -19,7 +18,8 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 import torch
-from src.models.inference import load_inference_bundle, predict_gloss
+from src.models.inference import load_inference_bundle
+from src.services.asl_pipeline import run_text_to_asl
 from src.training.metrics import compute_bleu
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="torch")
@@ -136,15 +136,15 @@ def main():
 
         category_correct = 0
         for english, expected_gloss in examples:
-            prediction = predict_gloss(
+            result = run_text_to_asl(
                 english,
-                bundle,
+                bundle=bundle,
                 device=args.device,
                 max_len=32,
                 beam_width=args.beam_width,
             )
 
-            predicted_gloss = prediction.predicted_gloss_text
+            predicted_gloss = result["predicted_gloss_text"]
             is_match = (predicted_gloss == expected_gloss)
 
             if is_match:

@@ -1,0 +1,47 @@
+paths:
+  raw_aslg_csv: data/raw/train.csv
+  raw_project_conversational: data/raw/asl_gloss_conversational.json
+  raw_project_v2: data/raw/asl_gloss_pairs_v2.json
+  raw_project_v4: data/raw/asl_gloss_pairs_v4.json
+  aslg_pretrain_dataset: data/active/aslg_pc12_pretrain.json
+  project_finetune_dataset: data/active/project_finetune_v2_v4_contrastive.json
+  data_report: data/reports/data_pipeline_report.json
+  aslg_pretrain_checkpoint_dir: checkpoints/aslg_pc12_pretrain
+  project_finetune_checkpoint_dir: checkpoints/project_finetune_v2_v4_contrastive
+  pretrain_checkpoint: checkpoints/aslg_pc12_pretrain/best_model.pt
+  finetune_checkpoint: checkpoints/project_finetune_v2_v4_contrastive/best_model.pt
+
+training:
+  epochs: 80
+  batch_size: 16
+  lr: 0.0005
+  d_model: 128
+  nhead: 4
+  num_encoder_layers: 2
+  num_decoder_layers: 2
+  dim_feedforward: 256
+  dropout: 0.15
+  grad_clip: 1.0
+  label_smoothing: 0.1
+  warmup_epochs: 8
+  val_split: 0.15
+  test_split: 0.10
+  seed: 42
+  device: cpu
+
+pretrain:
+  epochs: 8
+  batch_size: 128
+  val_split: 0.02
+  test_split: 0.0
+  save_dir: checkpoints/aslg_pc12_pretrain
+  log_path: results/train_logs/aslg_pc12_pretrain_train_log.jsonl
+
+finetune:
+  save_dir: checkpoints/project_finetune_v2_v4_contrastive
+  init_checkpoint: checkpoints/aslg_pc12_pretrain/best_model.pt
+  log_path: results/train_logs/project_finetune_v2_v4_contrastive_train_log.jsonl
+
+evaluation:
+  beam_width: 3
+  device: cpu

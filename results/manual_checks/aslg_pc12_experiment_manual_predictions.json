@@ -1,0 +1,208 @@
+{
+  "current_full_contrastive": [
+    {
+      "english": "my mother is a doctor",
+      "predicted_gloss": "MY MOTHER DOCTOR",
+      "tokens": [
+        "MY",
+        "MOTHER",
+        "DOCTOR"
+      ]
+    },
+    {
+      "english": "my brother is a doctor",
+      "predicted_gloss": "MY BROTHER DOCTOR",
+      "tokens": [
+        "MY",
+        "BROTHER",
+        "DOCTOR"
+      ]
+    },
+    {
+      "english": "today the weather is nice",
+      "predicted_gloss": "TODAY NICE",
+      "tokens": [
+        "TODAY",
+        "NICE"
+      ]
+    },
+    {
+      "english": "can you give me directions",
+      "predicted_gloss": "YOU GIVE ME DIRECTION CAN",
+      "tokens": [
+        "YOU",
+        "GIVE",
+        "ME",
+        "DIRECTION",
+        "CAN"
+      ]
+    },
+    {
+      "english": "i cannot hear you",
+      "predicted_gloss": "I HEAR HER CAN NOT",
+      "tokens": [
+        "I",
+        "HEAR",
+        "HER",
+        "CAN",
+        "NOT"
+      ]
+    },
+    {
+      "english": "do you have time",
+      "predicted_gloss": "YOU HAVE TIME YOU",
+      "tokens": [
+        "YOU",
+        "HAVE",
+        "TIME",
+        "YOU"
+      ]
+    },
+    {
+      "english": "today i learned a new sign",
+      "predicted_gloss": "TODAY I LEARN NEW SIGN",
+      "tokens": [
+        "TODAY",
+        "I",
+        "LEARN",
+        "NEW",
+        "SIGN"
+      ]
+    }
+  ],
+  "aslg_pc12_only": [
+    {
+      "english": "my mother is a doctor",
+      "predicted_gloss": "BE DESC-NOT",
+      "tokens": [
+        "BE",
+        "DESC-NOT"
+      ]
+    },
+    {
+      "english": "my brother is a doctor",
+      "predicted_gloss": "BE DESC-NOT",
+      "tokens": [
+        "BE",
+        "DESC-NOT"
+      ]
+    },
+    {
+      "english": "today the weather is nice",
+      "predicted_gloss": "DESC-RE BE DESC-NOT",
+      "tokens": [
+        "DESC-RE",
+        "BE",
+        "DESC-NOT"
+      ]
+    },
+    {
+      "english": "can you give me directions",
+      "predicted_gloss": "X-I WOULD LIKE",
+      "tokens": [
+        "X-I",
+        "WOULD",
+        "LIKE"
+      ]
+    },
+    {
+      "english": "i cannot hear you",
+      "predicted_gloss": "X-I WOULD LIKE",
+      "tokens": [
+        "X-I",
+        "WOULD",
+        "LIKE"
+      ]
+    },
+    {
+      "english": "do you have time",
+      "predicted_gloss": "X-YOU HAVE DO X-YOU",
+      "tokens": [
+        "X-YOU",
+        "HAVE",
+        "DO",
+        "X-YOU"
+      ]
+    },
+    {
+      "english": "today i learned a new sign",
+      "predicted_gloss": "X-I WOULD LIKE",
+      "tokens": [
+        "X-I",
+        "WOULD",
+        "LIKE"
+      ]
+    }
+  ],
+  "aslg_pc12_then_project_finetune": [
+    {
+      "english": "my mother is a doctor",
+      "predicted_gloss": "MY MOTHER DOCTOR",
+      "tokens": [
+        "MY",
+        "MOTHER",
+        "DOCTOR"
+      ]
+    },
+    {
+      "english": "my brother is a doctor",
+      "predicted_gloss": "MY BROTHER DOCTOR",
+      "tokens": [
+        "MY",
+        "BROTHER",
+        "DOCTOR"
+      ]
+    },
+    {
+      "english": "today the weather is nice",
+      "predicted_gloss": "TODAY SUNDAY",
+      "tokens": [
+        "TODAY",
+        "SUNDAY"
+      ]
+    },
+    {
+      "english": "can you give me directions",
+      "predicted_gloss": "YOU GIVE ME DIRECTION CAN",
+      "tokens": [
+        "YOU",
+        "GIVE",
+        "ME",
+        "DIRECTION",
+        "CAN"
+      ]
+    },
+    {
+      "english": "i cannot hear you",
+      "predicted_gloss": "I HEAR YOU CAN NOT",
+      "tokens": [
+        "I",
+        "HEAR",
+        "YOU",
+        "CAN",
+        "NOT"
+      ]
+    },
+    {
+      "english": "do you have time",
+      "predicted_gloss": "YOU HAVE TIME YOU",
+      "tokens": [
+        "YOU",
+        "HAVE",
+        "TIME",
+        "YOU"
+      ]
+    },
+    {
+      "english": "today i learned a new sign",
+      "predicted_gloss": "TODAY I LEARN NEW SIGN",
+      "tokens": [
+        "TODAY",
+        "I",
+        "LEARN",
+        "NEW",
+        "SIGN"
+      ]
+    }
+  ]
+}

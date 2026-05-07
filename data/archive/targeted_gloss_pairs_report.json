@@ -1,0 +1,16 @@
+{
+  "master_dataset": "data/asl_gloss_pairs_master.json",
+  "targeted_pair_count": 75,
+  "targeted_category_counts": {
+    "negation": 20,
+    "yes_no_question": 20,
+    "time_fronting": 15,
+    "family_profession_topic_comment": 10,
+    "descriptive_reorder": 10
+  },
+  "master_plus_targeted_count": 864,
+  "output_files": {
+    "targeted": "data/asl_gloss_pairs_targeted_75.json",
+    "master_plus_targeted": "data/asl_gloss_pairs_master_plus_targeted.json"
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "summary": {
+    "dataset": "challenge:/Users/agamsidhu/ASL/ASL-Speech-Therapist/data/eval/asl_grammar_challenge.json",
+    "checkpoint": "checkpoints/aslg_pc12_then_project_finetune/best_model.pt",
+    "split": "all",
+    "total_samples": 24,
+    "beam_width": 3,
+    "split_config": null,
+    "corpus_bleu": 0.7937,
+    "exact_match_rate": 0.7083,
+    "aligned_token_accuracy": 0.8021,
+    "token_overlap_f1": 0.8813,
+    "well_formed_rate": 1.0,
+    "english_copy_rate": 0.3333,
+    "function_word_leak_rate": 0.1667,
+    "reorder_case_count": 15,
+    "reorder_success_rate": 0.8,
+    "category_summary": {
+      "function_word_drop": {
+        "count": 22,
+        "exact_match_rate": 0.6818,
+        "avg_bleu": 0.6446,
+        "english_copy_rate": 0.3182,
+        "function_word_leak_rate": 0.0909,
+        "reorder_success_rate": 0.7857
+      },
+      "negation": {
+        "count": 4,
+        "exact_match_rate": 1.0,
+        "avg_bleu": 0.8211,
+        "english_copy_rate": 0.75,
+        "function_word_leak_rate": 0.25,
+        "reorder_success_rate": 1.0
+      },
+      "strong_reorder": {
+        "count": 19,
+        "exact_match_rate": 0.6316,
+        "avg_bleu": 0.6348,
+        "english_copy_rate": 0.1579,
+        "function_word_leak_rate": 0.2105,
+        "reorder_success_rate": 0.8
+      },
+      "time_fronting": {
+        "count": 4,
+        "exact_match_rate": 0.75,
+        "avg_bleu": 0.8119,
+        "english_copy_rate": 0.25,
+        "function_word_leak_rate": 0.25,
+        "reorder_success_rate": 0.6667
+      },
+      "topic_comment_like": {
+        "count": 3,
+        "exact_match_rate": 1.0,
+        "avg_bleu": 0.8047,
+        "english_copy_rate": 1.0,
+        "function_word_leak_rate": 0.0,
+        "reorder_success_rate": null
+      },
+      "wh_question": {
+        "count": 9,
+        "exact_match_rate": 0.5556,
+        "avg_bleu": 0.5048,
+        "english_copy_rate": 0.1111,
+        "function_word_leak_rate": 0.2222,
+        "reorder_success_rate": 0.8571
+      },
+      "yes_no_question": {
+        "count": 4,
+        "exact_match_rate": 0.5,
+        "avg_bleu": 0.6732,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 0.0,
+        "reorder_success_rate": 0.75
+      }
+    }
+  },
+  "examples": [
+    {
+      "english": "why are you late",
+      "reference": "YOU LATE WHY",
+      "predicted": "YOU LATE",
+      "notes": [
+        "copied_english_order",
+        "missing:WHY"
+      ],
+      "categories": [
+        "wh_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.3502
+    },
+    {
+      "english": "the weather is nice today",
+      "reference": "TODAY WEATHER NICE",
+      "predicted": "TODAY SUNDAY",
+      "notes": [
+        "missed_reference_reordering",
+        "missing:WEATHER,NICE",
+        "extra:SUNDAY"
+      ],
+      "categories": [
+        "time_fronting",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2476
+    },
+    {
+      "english": "are you deaf",
+      "reference": "YOU DEAF YOU",
+      "predicted": "YOU READY YOU",
+      "notes": [
+        "missing:DEAF",
+        "extra:READY"
+      ],
+      "categories": [
+        "yes_no_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.4082
+    },
+    {
+      "english": "do you want to go",
+      "reference": "YOU WANT GO YOU",
+      "predicted": "GO YOU WANT YOU",
+      "notes": [
+        "missed_reference_reordering"
+      ],
+      "categories": [
+        "yes_no_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.5774
+    },
+    {
+      "english": "how old are you",
+      "reference": "YOU AGE WHAT",
+      "predicted": "YOU DOING HOW",
+      "notes": [
+        "missing:AGE,WHAT",
+        "extra:DOING,HOW"
+      ],
+      "categories": [
+        "wh_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.3433
+    },
+    {
+      "english": "how long have you lived here",
+      "reference": "YOU LIVE HERE HOW-LONG",
+      "predicted": "TRAVEL YOU HAVE",
+      "notes": [
+        "missing:LIVE,HERE,HOW-LONG",
+        "extra:TRAVEL,HAVE"
+      ],
+      "categories": [
+        "wh_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.246
+    },
+    {
+      "english": "show me how to sign that",
+      "reference": "SHOW ME SIGN THAT HOW",
+      "predicted": "THAT SIGN NEVER ME",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:SHOW,HOW",
+        "extra:NEVER"
+      ],
+      "categories": [
+        "wh_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.3274
+    }
+  ]
+}

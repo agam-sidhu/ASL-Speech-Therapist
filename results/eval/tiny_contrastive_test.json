@@ -1,0 +1,438 @@
+{
+  "summary": {
+    "dataset": "data/asl_gloss_pairs_master_plus_contrastive.json",
+    "checkpoint": "checkpoints/tiny_contrastive/best_model.pt",
+    "split": "test",
+    "total_samples": 102,
+    "beam_width": 3,
+    "split_config": {
+      "val_split": 0.15,
+      "test_split": 0.1,
+      "seed": 42
+    },
+    "corpus_bleu": 0.1906,
+    "exact_match_rate": 0.0294,
+    "aligned_token_accuracy": 0.273,
+    "token_overlap_f1": 0.5221,
+    "well_formed_rate": 1.0,
+    "english_copy_rate": 0.3529,
+    "function_word_leak_rate": 0.1275,
+    "reorder_case_count": 47,
+    "reorder_success_rate": 0.383,
+    "category_summary": {
+      "deletion_or_subset": {
+        "count": 27,
+        "exact_match_rate": 0.037,
+        "avg_bleu": 0.3224,
+        "english_copy_rate": 0.4074,
+        "function_word_leak_rate": 0.2222,
+        "reorder_success_rate": null
+      },
+      "exact_copy": {
+        "count": 10,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2706,
+        "english_copy_rate": 0.3,
+        "function_word_leak_rate": 0.0,
+        "reorder_success_rate": null
+      },
+      "function_word_drop": {
+        "count": 64,
+        "exact_match_rate": 0.0312,
+        "avg_bleu": 0.2908,
+        "english_copy_rate": 0.3594,
+        "function_word_leak_rate": 0.0625,
+        "reorder_success_rate": 0.2963
+      },
+      "function_word_retained": {
+        "count": 14,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2262,
+        "english_copy_rate": 0.1429,
+        "function_word_leak_rate": 0.6429,
+        "reorder_success_rate": 0.4545
+      },
+      "mild_reorder": {
+        "count": 2,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2158,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 0.5,
+        "reorder_success_rate": 0.0
+      },
+      "negation": {
+        "count": 8,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2497,
+        "english_copy_rate": 0.5,
+        "function_word_leak_rate": 0.125,
+        "reorder_success_rate": 0.4
+      },
+      "strong_reorder": {
+        "count": 45,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2576,
+        "english_copy_rate": 0.2889,
+        "function_word_leak_rate": 0.1111,
+        "reorder_success_rate": 0.4
+      },
+      "time_fronting": {
+        "count": 17,
+        "exact_match_rate": 0.1176,
+        "avg_bleu": 0.4035,
+        "english_copy_rate": 0.4706,
+        "function_word_leak_rate": 0.1176,
+        "reorder_success_rate": 0.4286
+      },
+      "topic_comment_like": {
+        "count": 8,
+        "exact_match_rate": 0.125,
+        "avg_bleu": 0.4065,
+        "english_copy_rate": 0.75,
+        "function_word_leak_rate": 0.25,
+        "reorder_success_rate": null
+      },
+      "wh_question": {
+        "count": 8,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.1904,
+        "english_copy_rate": 0.25,
+        "function_word_leak_rate": 0.0,
+        "reorder_success_rate": 0.4286
+      },
+      "yes_no_question": {
+        "count": 15,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2926,
+        "english_copy_rate": 0.0667,
+        "function_word_leak_rate": 0.3333,
+        "reorder_success_rate": 0.4
+      }
+    }
+  },
+  "examples": [
+    {
+      "english": "my computer is new",
+      "reference": "MY COMPUTER NEW",
+      "predicted": "MY COMPUTER",
+      "notes": [
+        "missing:NEW"
+      ],
+      "categories": [
+        "deletion_or_subset",
+        "function_word_drop",
+        "topic_comment_like"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.3502
+    },
+    {
+      "english": "can i call you",
+      "reference": "YOU CALL I CAN",
+      "predicted": "I CAN",
+      "notes": [
+        "retained_function_words",
+        "missing:YOU,CALL"
+      ],
+      "categories": [
+        "strong_reorder",
+        "function_word_retained",
+        "yes_no_question"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2124
+    },
+    {
+      "english": "i am hungry",
+      "reference": "I HUNGRY",
+      "predicted": "I",
+      "notes": [
+        "missing:HUNGRY"
+      ],
+      "categories": [
+        "deletion_or_subset",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.2187
+    },
+    {
+      "english": "i remember your name now",
+      "reference": "YOUR NAME I REMEMBER NOW",
+      "predicted": "YOUR NAME",
+      "notes": [
+        "copied_english_order",
+        "missing:I,REMEMBER,NOW"
+      ],
+      "categories": [
+        "strong_reorder"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.1288
+    },
+    {
+      "english": "how often do you practice at home",
+      "reference": "YOU PRACTICE HOME HOW-OFTEN",
+      "predicted": "YOU WANT GO YOU",
+      "notes": [
+        "missing:PRACTICE,HOME,HOW-OFTEN",
+        "extra:WANT,GO"
+      ],
+      "categories": [
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.3195
+    },
+    {
+      "english": "did she send the email",
+      "reference": "SHE SEND EMAIL SHE",
+      "predicted": "SHE COME NOT",
+      "notes": [
+        "missed_reference_reordering",
+        "missing:SEND,EMAIL",
+        "extra:COME,NOT"
+      ],
+      "categories": [
+        "strong_reorder",
+        "function_word_drop",
+        "yes_no_question"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.246
+    },
+    {
+      "english": "the red book is near the table",
+      "reference": "TABLE NEAR RED BOOK",
+      "predicted": "RED BOOK",
+      "notes": [
+        "copied_english_order",
+        "missing:TABLE,NEAR"
+      ],
+      "categories": [
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2124
+    },
+    {
+      "english": "i moved the blue chair",
+      "reference": "BLUE CHAIR I MOVE",
+      "predicted": "I LOVE",
+      "notes": [
+        "missed_reference_reordering",
+        "missing:BLUE,CHAIR,MOVE",
+        "extra:LOVE"
+      ],
+      "categories": [
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.1502
+    },
+    {
+      "english": "today i work downtown",
+      "reference": "TODAY I WORK DOWNTOWN",
+      "predicted": "TODAY I LOVE",
+      "notes": [
+        "missing:WORK,DOWNTOWN",
+        "extra:LOVE"
+      ],
+      "categories": [
+        "exact_copy",
+        "time_fronting"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.3237
+    },
+    {
+      "english": "i write your name",
+      "reference": "I WRITE YOUR NAME",
+      "predicted": "YOUR NAME",
+      "notes": [
+        "missing:I,WRITE"
+      ],
+      "categories": [
+        "exact_copy"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.2124
+    },
+    {
+      "english": "i will meet you there",
+      "reference": "I MEET YOU THERE",
+      "predicted": "I WILL",
+      "notes": [
+        "retained_function_words",
+        "missing:MEET,YOU,THERE",
+        "extra:WILL"
+      ],
+      "categories": [
+        "deletion_or_subset",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.1502
+    },
+    {
+      "english": "what is your phone number",
+      "reference": "PHONE NUMBER YOUR WHAT",
+      "predicted": "YOUR NAME WHAT",
+      "notes": [
+        "missing:PHONE,NUMBER",
+        "extra:NAME"
+      ],
+      "categories": [
+        "strong_reorder",
+        "function_word_drop",
+        "wh_question"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2925
+    },
+    {
+      "english": "what is your favorite food",
+      "reference": "YOUR FAVORITE FOOD WHAT",
+      "predicted": "YOUR WHAT",
+      "notes": [
+        "missing:FAVORITE,FOOD"
+      ],
+      "categories": [
+        "strong_reorder",
+        "function_word_drop",
+        "wh_question"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.1786
+    },
+    {
+      "english": "are you not ready",
+      "reference": "YOU READY NOT YOU",
+      "predicted": "YOU READY NOT",
+      "notes": [
+        "missed_reference_reordering"
+      ],
+      "categories": [
+        "strong_reorder",
+        "function_word_drop",
+        "negation",
+        "yes_no_question"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.5067
+    },
+    {
+      "english": "i run five miles",
+      "reference": "MILE FIVE RUN I",
+      "predicted": "I",
+      "notes": [
+        "missed_reference_reordering",
+        "missing:MILE,FIVE,RUN"
+      ],
+      "categories": [
+        "strong_reorder"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.0296
+    },
+    {
+      "english": "i will wait for you",
+      "reference": "I WAIT YOU",
+      "predicted": "I WILL",
+      "notes": [
+        "retained_function_words",
+        "missing:WAIT,YOU",
+        "extra:WILL"
+      ],
+      "categories": [
+        "deletion_or_subset",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.2476
+    },
+    {
+      "english": "it is very hot",
+      "reference": "VERY HOT",
+      "predicted": "THIS ME",
+      "notes": [
+        "retained_function_words",
+        "missing:VERY,HOT",
+        "extra:THIS,ME"
+      ],
+      "categories": [
+        "deletion_or_subset",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.3689
+    },
+    {
+      "english": "i have been studying for two hours",
+      "reference": "I STUDY TWO HOUR",
+      "predicted": "I HAVE",
+      "notes": [
+        "missing:STUDY,TWO,HOUR",
+        "extra:HAVE"
+      ],
+      "categories": [
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.1502
+    },
+    {
+      "english": "i am sad",
+      "reference": "I SAD",
+      "predicted": "I",
+      "notes": [
+        "missing:SAD"
+      ],
+      "categories": [
+        "deletion_or_subset",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.2187
+    },
+    {
+      "english": "my father is tall",
+      "reference": "FATHER MY TALL",
+      "predicted": "MY FATHER BLUE BACKPACK CHAIR",
+      "notes": [
+        "missed_reference_reordering",
+        "copied_english_order",
+        "missing:TALL",
+        "extra:BLUE,BACKPACK,CHAIR"
+      ],
+      "categories": [
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2857
+    }
+  ]
+}

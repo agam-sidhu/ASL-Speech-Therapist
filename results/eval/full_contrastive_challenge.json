@@ -1,0 +1,247 @@
+{
+  "summary": {
+    "dataset": "challenge:/Users/agamsidhu/ASL/ASL-Speech-Therapist/data/eval/asl_grammar_challenge.json",
+    "checkpoint": "checkpoints/full_contrastive/best_model.pt",
+    "split": "all",
+    "total_samples": 24,
+    "beam_width": 3,
+    "split_config": null,
+    "corpus_bleu": 0.6988,
+    "exact_match_rate": 0.5833,
+    "aligned_token_accuracy": 0.7417,
+    "token_overlap_f1": 0.8573,
+    "well_formed_rate": 1.0,
+    "english_copy_rate": 0.3333,
+    "function_word_leak_rate": 0.1667,
+    "reorder_case_count": 15,
+    "reorder_success_rate": 0.8,
+    "category_summary": {
+      "function_word_drop": {
+        "count": 22,
+        "exact_match_rate": 0.6364,
+        "avg_bleu": 0.6331,
+        "english_copy_rate": 0.3182,
+        "function_word_leak_rate": 0.0909,
+        "reorder_success_rate": 0.7857
+      },
+      "negation": {
+        "count": 4,
+        "exact_match_rate": 0.5,
+        "avg_bleu": 0.6498,
+        "english_copy_rate": 0.75,
+        "function_word_leak_rate": 0.25,
+        "reorder_success_rate": 1.0
+      },
+      "strong_reorder": {
+        "count": 19,
+        "exact_match_rate": 0.5263,
+        "avg_bleu": 0.5729,
+        "english_copy_rate": 0.1579,
+        "function_word_leak_rate": 0.2105,
+        "reorder_success_rate": 0.8
+      },
+      "time_fronting": {
+        "count": 4,
+        "exact_match_rate": 0.5,
+        "avg_bleu": 0.7079,
+        "english_copy_rate": 0.25,
+        "function_word_leak_rate": 0.25,
+        "reorder_success_rate": 1.0
+      },
+      "topic_comment_like": {
+        "count": 3,
+        "exact_match_rate": 1.0,
+        "avg_bleu": 0.8047,
+        "english_copy_rate": 1.0,
+        "function_word_leak_rate": 0.0,
+        "reorder_success_rate": null
+      },
+      "wh_question": {
+        "count": 9,
+        "exact_match_rate": 0.5556,
+        "avg_bleu": 0.4917,
+        "english_copy_rate": 0.1111,
+        "function_word_leak_rate": 0.2222,
+        "reorder_success_rate": 0.8571
+      },
+      "yes_no_question": {
+        "count": 4,
+        "exact_match_rate": 0.5,
+        "avg_bleu": 0.6559,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 0.0,
+        "reorder_success_rate": 0.5
+      }
+    }
+  },
+  "examples": [
+    {
+      "english": "why are you late",
+      "reference": "YOU LATE WHY",
+      "predicted": "YOU LATE",
+      "notes": [
+        "copied_english_order",
+        "missing:WHY"
+      ],
+      "categories": [
+        "wh_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.3502
+    },
+    {
+      "english": "can you help me today",
+      "reference": "TODAY YOU HELP ME CAN",
+      "predicted": "TODAY YOU HELP ME THIS CAN",
+      "notes": [
+        "retained_function_words",
+        "extra:THIS"
+      ],
+      "categories": [
+        "time_fronting",
+        "strong_reorder"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.5373
+    },
+    {
+      "english": "the weather is nice today",
+      "reference": "TODAY WEATHER NICE",
+      "predicted": "TODAY NICE",
+      "notes": [
+        "missing:WEATHER"
+      ],
+      "categories": [
+        "time_fronting",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2945
+    },
+    {
+      "english": "i do not understand",
+      "reference": "I NOT UNDERSTAND",
+      "predicted": "I NOT UNDERSTAND INSTRUCTION",
+      "notes": [
+        "extra:INSTRUCTION"
+      ],
+      "categories": [
+        "negation",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.5946
+    },
+    {
+      "english": "i cannot hear you",
+      "reference": "I HEAR YOU CAN NOT",
+      "predicted": "I HEAR HER CAN NOT",
+      "notes": [
+        "retained_function_words",
+        "missing:YOU",
+        "extra:HER"
+      ],
+      "categories": [
+        "negation",
+        "strong_reorder"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.4273
+    },
+    {
+      "english": "are you deaf",
+      "reference": "YOU DEAF YOU",
+      "predicted": "STRONG YOU",
+      "notes": [
+        "missed_reference_reordering",
+        "missing:DEAF",
+        "extra:STRONG"
+      ],
+      "categories": [
+        "yes_no_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2476
+    },
+    {
+      "english": "do you want to go",
+      "reference": "YOU WANT GO YOU",
+      "predicted": "GO YOU WANT GO YOU",
+      "notes": [
+        "missed_reference_reordering"
+      ],
+      "categories": [
+        "yes_no_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.6687
+    },
+    {
+      "english": "how old are you",
+      "reference": "YOU AGE WHAT",
+      "predicted": "YOU DOING HOW",
+      "notes": [
+        "missing:AGE,WHAT",
+        "extra:DOING,HOW"
+      ],
+      "categories": [
+        "wh_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.3433
+    },
+    {
+      "english": "how long have you lived here",
+      "reference": "YOU LIVE HERE HOW-LONG",
+      "predicted": "YOU HAVE HOW-MANY",
+      "notes": [
+        "missing:LIVE,HERE,HOW-LONG",
+        "extra:HAVE,HOW-MANY"
+      ],
+      "categories": [
+        "wh_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.246
+    },
+    {
+      "english": "show me how to sign that",
+      "reference": "SHOW ME SIGN THAT HOW",
+      "predicted": "THAT SIGN MEAN",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:SHOW,ME,HOW",
+        "extra:MEAN"
+      ],
+      "categories": [
+        "wh_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2096
+    }
+  ]
+}

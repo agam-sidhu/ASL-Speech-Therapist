@@ -1,0 +1,603 @@
+{
+  "source": "local data/train.csv",
+  "columns": [
+    "gloss",
+    "text"
+  ],
+  "raw_row_count": 87710,
+  "missing_raw_cells": {
+    "text": 0,
+    "gloss": 0
+  },
+  "raw_rows_with_symbol_artifacts": 1497,
+  "converted_row_count": 80998,
+  "source_length": {
+    "avg": 12.256,
+    "min": 1,
+    "max": 53
+  },
+  "target_length": {
+    "avg": 10.908,
+    "min": 1,
+    "max": 49
+  },
+  "source_vocab_size": 20678,
+  "target_vocab_size": 16114,
+  "target_uppercase_rate": 1.0,
+  "top_source_tokens": [
+    [
+      "the",
+      65645
+    ],
+    [
+      "to",
+      30062
+    ],
+    [
+      "of",
+      29050
+    ],
+    [
+      "is",
+      23807
+    ],
+    [
+      "in",
+      20972
+    ],
+    [
+      "and",
+      20018
+    ],
+    [
+      "this",
+      17489
+    ],
+    [
+      "a",
+      17187
+    ],
+    [
+      "we",
+      16600
+    ],
+    [
+      "that",
+      16008
+    ],
+    [
+      "i",
+      14377
+    ],
+    [
+      "for",
+      11772
+    ],
+    [
+      "it",
+      10921
+    ],
+    [
+      "be",
+      9863
+    ],
+    [
+      "are",
+      9433
+    ],
+    [
+      "have",
+      8743
+    ],
+    [
+      "on",
+      8524
+    ],
+    [
+      "not",
+      8288
+    ],
+    [
+      "will",
+      6644
+    ],
+    [
+      "european",
+      6000
+    ],
+    [
+      "with",
+      5420
+    ],
+    [
+      "has",
+      5246
+    ],
+    [
+      "must",
+      4670
+    ],
+    [
+      "as",
+      4470
+    ],
+    [
+      "you",
+      4441
+    ]
+  ],
+  "top_target_tokens": [
+    [
+      "BE",
+      52471
+    ],
+    [
+      "TO",
+      29973
+    ],
+    [
+      "X-WE",
+      22762
+    ],
+    [
+      "IN",
+      20518
+    ],
+    [
+      "AND",
+      19984
+    ],
+    [
+      "THIS",
+      17389
+    ],
+    [
+      "THAT",
+      15961
+    ],
+    [
+      "X-I",
+      15222
+    ],
+    [
+      "HAVE",
+      14838
+    ],
+    [
+      "FOR",
+      11744
+    ],
+    [
+      "X-IT",
+      10852
+    ],
+    [
+      "DESC-NOT",
+      9521
+    ],
+    [
+      "ON",
+      8467
+    ],
+    [
+      "WILL",
+      6628
+    ],
+    [
+      "EUROPEAN",
+      6146
+    ],
+    [
+      "X-YOU",
+      5614
+    ],
+    [
+      "WITH",
+      5409
+    ],
+    [
+      "DO",
+      5222
+    ],
+    [
+      "X-Y",
+      5070
+    ],
+    [
+      "MUST",
+      4666
+    ],
+    [
+      "AS",
+      4449
+    ],
+    [
+      "DESC-ALSO",
+      4334
+    ],
+    [
+      "CAN",
+      3846
+    ],
+    [
+      "MR",
+      3758
+    ],
+    [
+      "WOULD",
+      3677
+    ]
+  ],
+  "top_templates": [
+    [
+      "i would like to",
+      659
+    ],
+    [
+      "the vote will take",
+      163
+    ],
+    [
+      "at the same time",
+      153
+    ],
+    [
+      "the next item is",
+      138
+    ],
+    [
+      "i would also like",
+      128
+    ],
+    [
+      "that is why i",
+      123
+    ],
+    [
+      "i should like to",
+      114
+    ],
+    [
+      "the sitting was suspended",
+      111
+    ],
+    [
+      "that is why we",
+      95
+    ],
+    [
+      "i believe that the",
+      84
+    ],
+    [
+      "member of the commission",
+      83
+    ],
+    [
+      "i think it is",
+      82
+    ],
+    [
+      "i voted in favour",
+      80
+    ],
+    [
+      "thank you very much",
+      78
+    ],
+    [
+      "the sitting was closed",
+      74
+    ],
+    [
+      "on the other hand",
+      64
+    ],
+    [
+      "mr president ladies and",
+      63
+    ],
+    [
+      "i believe that this",
+      63
+    ],
+    [
+      "i hope that the",
+      58
+    ],
+    [
+      "i believe that we",
+      57
+    ]
+  ],
+  "formal_domain_row_rate": 0.2237,
+  "conversational_term_row_rate": 0.2456,
+  "sample_records": [
+    {
+      "pair_id": "aslg_pc12_000001",
+      "english": "membership of parliament see minutes",
+      "gloss": "MEMBERSHIP PARLIAMENT SEE MINUTE",
+      "source_kind": "aslg_pc12",
+      "source_file": "data/train.csv",
+      "original_row_index": 0
+    },
+    {
+      "pair_id": "aslg_pc12_000002",
+      "english": "approval of minutes of previous sitting see minutes",
+      "gloss": "APPROVAL MINUTE DESC-PREVIOUS SIT SEE MINUTE",
+      "source_kind": "aslg_pc12",
+      "source_file": "data/train.csv",
+      "original_row_index": 1
+    },
+    {
+      "pair_id": "aslg_pc12_000003",
+      "english": "verification of credentials see minutes",
+      "gloss": "VERIFICATION CREDENTIALS SEE MINUTE",
+      "source_kind": "aslg_pc12",
+      "source_file": "data/train.csv",
+      "original_row_index": 3
+    },
+    {
+      "pair_id": "aslg_pc12_000004",
+      "english": "documents received see minutes",
+      "gloss": "DOCUMENT RECEIVE SEE MINUTE",
+      "source_kind": "aslg_pc12",
+      "source_file": "data/train.csv",
+      "original_row_index": 4
+    },
+    {
+      "pair_id": "aslg_pc12_000005",
+      "english": "written statements and oral questions tabling see minutes",
+      "gloss": "WRITE STATEMENT AND DESC-ORAL QUESTION TABLE SEE MINUTE",
+      "source_kind": "aslg_pc12",
+      "source_file": "data/train.csv",
+      "original_row_index": 5
+    },
+    {
+      "pair_id": "aslg_pc12_000006",
+      "english": "petitions see minutes",
+      "gloss": "PETITION SEE MINUTE",
+      "source_kind": "aslg_pc12",
+      "source_file": "data/train.csv",
+      "original_row_index": 6
+    },
+    {
+      "pair_id": "aslg_pc12_000007",
+      "english": "texts of agreements forwarded by the council see minutes",
+      "gloss": "TEXT AGREEMENT DESC-FORWARD BY COUNCIL SEE MINUTE",
+      "source_kind": "aslg_pc12",
+      "source_file": "data/train.csv",
+      "original_row_index": 7
+    },
+    {
+      "pair_id": "aslg_pc12_000008",
+      "english": "action taken on parliament's resolutions see minutes",
+      "gloss": "ACTION TAKE ON PARLIAMENT X-POSS RESOLUTION SEE MINUTE",
+      "source_kind": "aslg_pc12",
+      "source_file": "data/train.csv",
+      "original_row_index": 8
+    },
+    {
+      "pair_id": "aslg_pc12_000009",
+      "english": "agenda for next sitting see minutes",
+      "gloss": "AGENDA FOR NEXT SIT SEE MINUTE",
+      "source_kind": "aslg_pc12",
+      "source_file": "data/train.csv",
+      "original_row_index": 9
+    },
+    {
+      "pair_id": "aslg_pc12_000010",
+      "english": "closure of sitting",
+      "gloss": "CLOSURE SIT",
+      "source_kind": "aslg_pc12",
+      "source_file": "data/train.csv",
+      "original_row_index": 10
+    }
+  ],
+  "project_comparison": {
+    "project_dataset": "data/asl_gloss_pairs_master_plus_contrastive.json",
+    "project_row_count": 989,
+    "project_source_length": {
+      "avg": 4.354,
+      "min": 1,
+      "max": 8
+    },
+    "project_target_length": {
+      "avg": 3.406,
+      "min": 1,
+      "max": 6
+    },
+    "project_source_vocab_size": 631,
+    "project_target_vocab_size": 532,
+    "source_vocab_overlap_with_project": 560,
+    "target_vocab_overlap_with_project": 338,
+    "project_source_vocab_covered_by_aslg_rate": 0.8875,
+    "project_target_vocab_covered_by_aslg_rate": 0.6353
+  },
+  "conversion": {
+    "rows_seen": 87710,
+    "rows_kept_after_dedup": 80998,
+    "exact_duplicate_pairs_removed": 6663,
+    "dropped_rows": 49,
+    "drop_reasons": {
+      "missing_text": 48,
+      "missing_gloss": 1
+    },
+    "english_conflict_count": 93,
+    "english_conflict_examples": [
+      {
+        "english": "the sitting was closed at p m",
+        "glosses": [
+          "SIT BE DESC-CLOSE AT 1 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 1.15 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 10 55 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 10.05 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 10.10 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 10.20 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 10.30 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 10.45 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 10.55 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 11 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 11.05 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 11.10 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 11.15 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 11.20 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 11.25 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 11.30 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 11.35 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 11.40 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 11.45 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 11.50 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 11.55 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 12.05 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 12.20 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 12.50 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 2.05 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 4.10 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 4.15 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 4.20 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 4.25 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 4.35 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 4.45 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 6.15 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 7.45 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 9.40 DESC-P.M.",
+          "SIT BE DESC-CLOSE AT 9.45 DESC-P.M."
+        ]
+      },
+      {
+        "english": "the sitting was suspended at p m and resumed at p m",
+        "glosses": [
+          "SIT BE SUSPEND AT 1 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 1.05 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 1.05 DESC-P.M. AND RESUME AT 3.05 DESC-P.M.",
+          "SIT BE SUSPEND AT 1.10 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 1.10 DESC-P.M. AND RESUME AT 3.00 DESC-P.M.",
+          "SIT BE SUSPEND AT 1.15 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 1.15 DESC-P.M. AND RESUME AT 3.05 DESC-P.M.",
+          "SIT BE SUSPEND AT 1.20 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 1.20 DESC-P.M. AND RESUME AT 3.05 DESC-P.M.",
+          "SIT BE SUSPEND AT 1.25 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 1.30 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 1.35 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 1.35 DESC-P.M. AND RESUME AT 3.05 DESC-P.M.",
+          "SIT BE SUSPEND AT 1.45 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 1.50 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 1.55 DESC-P.M. AND RESUME AT 3.05 DESC-P.M.",
+          "SIT BE SUSPEND AT 12.25 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 12.35 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 12.40 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 12.40 DESC-P.M. AND RESUME AT 3.00 DESC-P.M.",
+          "SIT BE SUSPEND AT 12.40 DESC-P.M. AND RESUME AT 3.05 DESC-P.M.",
+          "SIT BE SUSPEND AT 12.45 DESC-P.M. AND RESUME AT 3.00 DESC-P.M.",
+          "SIT BE SUSPEND AT 12.50 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 12.50 DESC-P.M. AND RESUME AT 3.00 DESC-P.M.",
+          "SIT BE SUSPEND AT 12.50 DESC-P.M. AND RESUME AT 3.05 DESC-P.M.",
+          "SIT BE SUSPEND AT 12.55 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 2 DESC-P.M. AND RESUME AT 3 DESC-P.M.",
+          "SIT BE SUSPEND AT 2.25 DESC-P.M. AND RESUME AT 3.05 DESC-P.M.",
+          "SIT BE SUSPEND AT 3.25 DESC-P.M. AND RESUME AT 6.00 DESC-P.M.",
+          "SIT BE SUSPEND AT 7 DESC-P.M. AND RESUME AT 9 DESC-P.M.",
+          "SIT BE SUSPEND AT 7.05 DESC-P.M. AND RESUME AT 9.00 DESC-P.M.",
+          "SIT BE SUSPEND AT 7.15 DESC-P.M. AND RESUME AT 9.00 DESC-P.M.",
+          "SIT BE SUSPEND AT 7.30 DESC-P.M. AND RESUME AT 9 DESC-P.M.",
+          "SIT BE SUSPEND AT 7.30 DESC-P.M. AND RESUME AT 9.00 DESC-P.M.",
+          "SIT BE SUSPEND AT 7.35 DESC-P.M. AND RESUME AT 9.00 DESC-P.M.",
+          "SIT BE SUSPEND AT 8 DESC-P.M. AND RESUME AT 9.05 DESC-P.M.",
+          "SIT BE SUSPEND AT 8.05 DESC-P.M. AND RESUME AT 9 DESC-P.M.",
+          "SIT BE SUSPEND AT 8.15 DESC-P.M. AND RESUME AT 9 DESC-P.M.",
+          "SIT BE SUSPEND AT 8.20 DESC-P.M. AND RESUME AT 9 DESC-P.M."
+        ]
+      },
+      {
+        "english": "the sitting was opened at a m",
+        "glosses": [
+          "SIT BE DESC-OPEN AT 10 DESC-A.M.",
+          "SIT BE DESC-OPEN AT 10.05 DESC-A.M.",
+          "SIT BE DESC-OPEN AT 8.30 DESC-A.M.",
+          "SIT BE DESC-OPEN AT 9 DESC-A.M.",
+          "SIT BE DESC-OPEN AT 9.00 DESC-A.M.",
+          "SIT BE DESC-OPEN AT 9.05 DESC-A.M.",
+          "SIT BE DESC-OPEN AT 9.10 DESC-A.M.",
+          "SIT BE DESC-OPEN AT 9.30 DESC-A.M.",
+          "SIT BE DESC-OPEN AT 9.35 DESC-A.M."
+        ]
+      },
+      {
+        "english": "the sitting was suspended at p m",
+        "glosses": [
+          "SIT BE SUSPEND AT 11.20 DESC-P.M.",
+          "SIT BE SUSPEND AT 23.25 DESC-P.M."
+        ]
+      },
+      {
+        "english": "i declare the session of the european parliament adjourned",
+        "glosses": [
+          "X-I DECLARE 2006 2007 SESSION EUROPEAN PARLIAMENT ADJOURN",
+          "X-I DECLARE SESSION EUROPEAN PARLIAMENT ADJOURN"
+        ]
+      },
+      {
+        "english": "the sitting was closed at midnight",
+        "glosses": [
+          "SIT BE DESC-CLOSE AT 12 MIDNIGHT",
+          "SIT BE DESC-CLOSE AT MIDNIGHT"
+        ]
+      },
+      {
+        "english": "the sitting was opened at",
+        "glosses": [
+          "SIT BE DESC-OPEN AT 08.30",
+          "SIT BE DESC-OPEN AT 09 00",
+          "SIT BE DESC-OPEN AT 09 05",
+          "SIT BE DESC-OPEN AT 09.00",
+          "SIT BE DESC-OPEN AT 09.05",
+          "SIT BE DESC-OPEN AT 09.10",
+          "SIT BE DESC-OPEN AT 10.00",
+          "SIT BE DESC-OPEN AT 10.05",
+          "SIT BE DESC-OPEN AT 15.05",
+          "SIT BE DESC-OPEN AT 15.50",
+          "SIT BE DESC-OPEN AT 9 05"
+        ]
+      },
+      {
+        "english": "draft amending budget no vote",
+        "glosses": [
+          "DRAFT AMEND BUDGET NO 1 2007 VOTE",
+          "DRAFT AMEND BUDGET NO 2 2007 VOTE",
+          "DRAFT AMEND BUDGET NO 3 2007 VOTE",
+          "DRAFT AMEND BUDGET NO 4 2007 VOTE",
+          "DRAFT AMEND BUDGET NO 5 2007 VOTE",
+          "DRAFT AMEND BUDGET NO 7 2007 VOTE"
+        ]
+      },
+      {
+        "english": "the sitting closed at",
+        "glosses": [
+          "SIT DESC-CLOSE AT 00.05",
+          "SIT DESC-CLOSE AT 12.50",
+          "SIT DESC-CLOSE AT 16.05",
+          "SIT DESC-CLOSE AT 16.25",
+          "SIT DESC-CLOSE AT 16.30",
+          "SIT DESC-CLOSE AT 16.35",
+          "SIT DESC-CLOSE AT 22.45",
+          "SIT DESC-CLOSE AT 22.50",
+          "SIT DESC-CLOSE AT 23.15",
+          "SIT DESC-CLOSE AT 23.35",
+          "SIT DESC-CLOSE AT 23.40",
+          "SIT DESC-CLOSE AT 23.45",
+          "SIT DESC-CLOSE AT 23.50",
+          "SIT DESC-CLOSE AT 23.55"
+        ]
+      },
+      {
+        "english": "i declare the session of the european parliament open",
+        "glosses": [
+          "X-I DECLARE 2007 2008 SESSION EUROPEAN PARLIAMENT DESC-OPEN",
+          "X-I DECLARE 2008 2009 SESSION EUROPEAN PARLIAMENT DESC-OPEN",
+          "X-I DECLARE 2010 2011 SESSION EUROPEAN PARLIAMENT DESC-OPEN"
+        ]
+      }
+    ]
+  }
+}

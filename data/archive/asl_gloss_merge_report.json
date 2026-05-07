@@ -1,0 +1,24 @@
+{
+  "original_sources": {
+    "data/archive/toy_asl_pairs.json": 16,
+    "data/archive/asl_gloss_pairs_v2.json": 396,
+    "data/archive/asl_gloss_pairs_v3.json": 372
+  },
+  "original_unique_pairs": 753,
+  "generated_pair_count": 150,
+  "generated_category_counts": {
+    "wh_question": 30,
+    "time_fronting": 30,
+    "negation": 30,
+    "yes_no_question": 30,
+    "topic_comment_or_reordering": 30
+  },
+  "exact_duplicates_removed": 31,
+  "conflict_group_count": 65,
+  "final_merged_pair_count": 903,
+  "output_files": {
+    "generated": "data/archive/asl_gloss_pairs_generated_150.json",
+    "merged": "data/archive/asl_gloss_pairs_merged.json",
+    "conflicts": "data/review/asl_gloss_pair_conflicts.json"
+  }
+}

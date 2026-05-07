@@ -1,0 +1,445 @@
+{
+  "summary": {
+    "dataset": "challenge:/Users/agamsidhu/ASL/ASL-Speech-Therapist/data/eval/asl_grammar_challenge.json",
+    "checkpoint": "checkpoints/aslg_pc12_only/best_model.pt",
+    "split": "all",
+    "total_samples": 24,
+    "beam_width": 3,
+    "split_config": null,
+    "corpus_bleu": 0.0,
+    "exact_match_rate": 0.0,
+    "aligned_token_accuracy": 0.0326,
+    "token_overlap_f1": 0.0336,
+    "well_formed_rate": 1.0,
+    "english_copy_rate": 0.0,
+    "function_word_leak_rate": 0.9583,
+    "reorder_case_count": 15,
+    "reorder_success_rate": 0.0,
+    "category_summary": {
+      "function_word_drop": {
+        "count": 22,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2746,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 0.9545,
+        "reorder_success_rate": 0.0
+      },
+      "negation": {
+        "count": 4,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.202,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 1.0,
+        "reorder_success_rate": 0.0
+      },
+      "strong_reorder": {
+        "count": 19,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2851,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 0.9474,
+        "reorder_success_rate": 0.0
+      },
+      "time_fronting": {
+        "count": 4,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2357,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 1.0,
+        "reorder_success_rate": 0.0
+      },
+      "topic_comment_like": {
+        "count": 3,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.2255,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 1.0,
+        "reorder_success_rate": null
+      },
+      "wh_question": {
+        "count": 9,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.3133,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 0.8889,
+        "reorder_success_rate": 0.0
+      },
+      "yes_no_question": {
+        "count": 4,
+        "exact_match_rate": 0.0,
+        "avg_bleu": 0.297,
+        "english_copy_rate": 0.0,
+        "function_word_leak_rate": 1.0,
+        "reorder_success_rate": 0.0
+      }
+    }
+  },
+  "examples": [
+    {
+      "english": "what is your name",
+      "reference": "YOUR NAME WHAT",
+      "predicted": "DESC-RE BE WHAT",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:YOUR,NAME",
+        "extra:DESC-RE,BE"
+      ],
+      "categories": [
+        "wh_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.3433
+    },
+    {
+      "english": "where are you from",
+      "reference": "YOU FROM WHERE",
+      "predicted": "X-YOU BE X-YOU",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:YOU,FROM,WHERE",
+        "extra:X-YOU,BE,X-YOU"
+      ],
+      "categories": [
+        "wh_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.3195
+    },
+    {
+      "english": "what do you need",
+      "reference": "YOU NEED WHAT",
+      "predicted": "X-YOU DO X-YOU X-YOU",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:YOU,NEED,WHAT",
+        "extra:X-YOU,DO,X-YOU"
+      ],
+      "categories": [
+        "wh_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.3021
+    },
+    {
+      "english": "why are you late",
+      "reference": "YOU LATE WHY",
+      "predicted": "X-YOU BE X-YOU",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:YOU,LATE,WHY",
+        "extra:X-YOU,BE,X-YOU"
+      ],
+      "categories": [
+        "wh_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.3195
+    },
+    {
+      "english": "can you help me today",
+      "reference": "TODAY YOU HELP ME CAN",
+      "predicted": "X-I WOULD LIKE TO X-YOU",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:TODAY,YOU,HELP",
+        "extra:X-I,WOULD,LIKE"
+      ],
+      "categories": [
+        "time_fronting",
+        "strong_reorder"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2296
+    },
+    {
+      "english": "i go to school every day",
+      "reference": "EVERY-DAY I GO SCHOOL",
+      "predicted": "X-I WOULD LIKE TO THANK",
+      "notes": [
+        "retained_function_words",
+        "missing:EVERY-DAY,I,GO",
+        "extra:X-I,WOULD,LIKE"
+      ],
+      "categories": [
+        "time_fronting",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.2296
+    },
+    {
+      "english": "the weather is nice today",
+      "reference": "TODAY WEATHER NICE",
+      "predicted": "DESC-RE BE DESC-NOT",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:TODAY,WEATHER,NICE",
+        "extra:DESC-RE,BE,DESC-NOT"
+      ],
+      "categories": [
+        "time_fronting",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.3195
+    },
+    {
+      "english": "i learned a new sign today",
+      "reference": "TODAY I LEARN NEW SIGN",
+      "predicted": "X-I WOULD LIKE",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:TODAY,I,LEARN",
+        "extra:X-I,WOULD,LIKE"
+      ],
+      "categories": [
+        "time_fronting",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.164
+    },
+    {
+      "english": "i do not understand",
+      "reference": "I NOT UNDERSTAND",
+      "predicted": "X-I DO DESC-NOT DESC-NOT DESC-NOT DESC-NOT",
+      "notes": [
+        "retained_function_words",
+        "missing:I,NOT,UNDERSTAND",
+        "extra:X-I,DO,DESC-NOT"
+      ],
+      "categories": [
+        "negation",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.1858
+    },
+    {
+      "english": "i cannot hear you",
+      "reference": "I HEAR YOU CAN NOT",
+      "predicted": "X-I WOULD LIKE",
+      "notes": [
+        "retained_function_words",
+        "missing:I,HEAR,YOU",
+        "extra:X-I,WOULD,LIKE"
+      ],
+      "categories": [
+        "negation",
+        "strong_reorder"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.164
+    },
+    {
+      "english": "do not worry",
+      "reference": "WORRY NOT",
+      "predicted": "DESC-NOT DO DESC-NOT DESC-NOT",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:WORRY,NOT",
+        "extra:DESC-NOT,DO,DESC-NOT"
+      ],
+      "categories": [
+        "negation",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.3021
+    },
+    {
+      "english": "i did not finish my project",
+      "reference": "I NOT FINISH MY PROJECT",
+      "predicted": "X-I DO DESC-NOT DESC-NOT DESC-NOT DESC-NOT DESC-NOT",
+      "notes": [
+        "retained_function_words",
+        "missing:I,NOT,FINISH",
+        "extra:X-I,DO,DESC-NOT"
+      ],
+      "categories": [
+        "negation",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.1562
+    },
+    {
+      "english": "are you deaf",
+      "reference": "YOU DEAF YOU",
+      "predicted": "X-YOU BE X-YOU",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:YOU,DEAF,YOU",
+        "extra:X-YOU,BE,X-YOU"
+      ],
+      "categories": [
+        "yes_no_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.3195
+    },
+    {
+      "english": "do you understand",
+      "reference": "YOU UNDERSTAND YOU",
+      "predicted": "X-YOU DO X-YOU",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:YOU,UNDERSTAND,YOU",
+        "extra:X-YOU,DO,X-YOU"
+      ],
+      "categories": [
+        "yes_no_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.3195
+    },
+    {
+      "english": "do you want to go",
+      "reference": "YOU WANT GO YOU",
+      "predicted": "X-YOU WOULD LIKE TO DO",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:YOU,WANT,GO",
+        "extra:X-YOU,WOULD,LIKE"
+      ],
+      "categories": [
+        "yes_no_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.2296
+    },
+    {
+      "english": "do you have time",
+      "reference": "YOU HAVE TIME YOU",
+      "predicted": "X-YOU HAVE DO X-YOU",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:YOU,TIME,YOU",
+        "extra:X-YOU,DO,X-YOU"
+      ],
+      "categories": [
+        "yes_no_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.3195
+    },
+    {
+      "english": "my mother is a doctor",
+      "reference": "MY MOTHER DOCTOR",
+      "predicted": "BE DESC-NOT",
+      "notes": [
+        "retained_function_words",
+        "missing:MY,MOTHER,DOCTOR",
+        "extra:BE,DESC-NOT"
+      ],
+      "categories": [
+        "topic_comment_like",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.2237
+    },
+    {
+      "english": "my favorite color is blue",
+      "reference": "MY FAVORITE COLOR BLUE",
+      "predicted": "THIS BE DESC-NOT",
+      "notes": [
+        "retained_function_words",
+        "missing:MY,FAVORITE,COLOR",
+        "extra:THIS,BE,DESC-NOT"
+      ],
+      "categories": [
+        "topic_comment_like",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.2289
+    },
+    {
+      "english": "my computer is broken",
+      "reference": "MY COMPUTER BREAK",
+      "predicted": "BE DESC-NOT",
+      "notes": [
+        "retained_function_words",
+        "missing:MY,COMPUTER,BREAK",
+        "extra:BE,DESC-NOT"
+      ],
+      "categories": [
+        "topic_comment_like",
+        "function_word_drop"
+      ],
+      "reorder_required": false,
+      "exact_match": false,
+      "bleu": 0.2237
+    },
+    {
+      "english": "where is the bathroom",
+      "reference": "BATHROOM WHERE",
+      "predicted": "BE DESC-NOT",
+      "notes": [
+        "missed_reference_reordering",
+        "retained_function_words",
+        "missing:BATHROOM,WHERE",
+        "extra:BE,DESC-NOT"
+      ],
+      "categories": [
+        "wh_question",
+        "strong_reorder",
+        "function_word_drop"
+      ],
+      "reorder_required": true,
+      "exact_match": false,
+      "bleu": 0.3689
+    }
+  ]
+}

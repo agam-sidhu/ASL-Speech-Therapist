@@ -1,0 +1,827 @@
+[
+  {
+    "pair_id": "targeted_0001",
+    "english": "i cannot hear the teacher",
+    "gloss": "I HEAR TEACHER CAN NOT",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0002",
+    "english": "i did not finish my homework",
+    "gloss": "I NOT FINISH MY HOMEWORK",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0003",
+    "english": "she is not home today",
+    "gloss": "TODAY SHE HOME NOT",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0004",
+    "english": "we do not understand the homework",
+    "gloss": "WE NOT UNDERSTAND HOMEWORK",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0005",
+    "english": "he cannot come tomorrow",
+    "gloss": "TOMORROW HE COME CAN NOT",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0006",
+    "english": "my phone is not working",
+    "gloss": "MY PHONE WORK NOT",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0007",
+    "english": "i am not ready for class",
+    "gloss": "CLASS I READY NOT",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0008",
+    "english": "they did not bring the book",
+    "gloss": "THEY BRING BOOK NOT",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0009",
+    "english": "i never visited that museum",
+    "gloss": "I VISIT THAT MUSEUM NEVER",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0010",
+    "english": "the train is not here yet",
+    "gloss": "TRAIN HERE NOT YET",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0011",
+    "english": "i do not like this soup",
+    "gloss": "THIS SOUP I LIKE NOT",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0012",
+    "english": "she cannot find her keys",
+    "gloss": "HER KEY SHE FIND CAN NOT",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0013",
+    "english": "we are not late today",
+    "gloss": "TODAY WE LATE NOT",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0014",
+    "english": "i do not remember your name",
+    "gloss": "YOUR NAME I REMEMBER NOT",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0015",
+    "english": "he never studies at night",
+    "gloss": "NIGHT HE STUDY NEVER",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0016",
+    "english": "my computer is not charged",
+    "gloss": "MY COMPUTER CHARGE NOT",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0017",
+    "english": "i cannot stay long",
+    "gloss": "I STAY LONG CAN NOT",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0018",
+    "english": "they are not finished yet",
+    "gloss": "THEY FINISH NOT YET",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0019",
+    "english": "i do not want that one",
+    "gloss": "THAT ONE I WANT NOT",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0020",
+    "english": "the library is not open now",
+    "gloss": "LIBRARY OPEN NOT NOW",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "negation",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0021",
+    "english": "do you have time now",
+    "gloss": "YOU HAVE TIME NOW YOU",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0022",
+    "english": "are you free tomorrow",
+    "gloss": "YOU FREE TOMORROW YOU",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0023",
+    "english": "can we start class",
+    "gloss": "WE START CLASS CAN",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0024",
+    "english": "did she call you",
+    "gloss": "SHE CALL YOU SHE",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0025",
+    "english": "are they ready already",
+    "gloss": "THEY READY ALREADY THEY",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0026",
+    "english": "can you help me later",
+    "gloss": "LATER YOU HELP ME CAN",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0027",
+    "english": "do you know my teacher",
+    "gloss": "YOU KNOW MY TEACHER YOU",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0028",
+    "english": "is he home now",
+    "gloss": "HE HOME NOW HE",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0029",
+    "english": "did they finish the project",
+    "gloss": "THEY FINISH PROJECT THEY",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0030",
+    "english": "can i leave early",
+    "gloss": "I LEAVE EARLY CAN",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0031",
+    "english": "do you need water",
+    "gloss": "YOU NEED WATER YOU",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0032",
+    "english": "are we meeting today",
+    "gloss": "TODAY WE MEET WE",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0033",
+    "english": "can he drive tonight",
+    "gloss": "HE DRIVE TONIGHT CAN",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0034",
+    "english": "do you want more coffee",
+    "gloss": "YOU WANT MORE COFFEE YOU",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0035",
+    "english": "is she your doctor",
+    "gloss": "SHE YOUR DOCTOR SHE",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0036",
+    "english": "did he bring the tickets",
+    "gloss": "HE BRING TICKET HE",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0037",
+    "english": "can they stay after class",
+    "gloss": "AFTER CLASS THEY STAY CAN",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0038",
+    "english": "do you hear the music",
+    "gloss": "YOU HEAR MUSIC YOU",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0039",
+    "english": "are you busy this weekend",
+    "gloss": "THIS WEEKEND YOU BUSY YOU",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0040",
+    "english": "can we talk after dinner",
+    "gloss": "AFTER DINNER WE TALK CAN",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "yes_no_question",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0041",
+    "english": "today the weather is nice",
+    "gloss": "TODAY WEATHER NICE",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0042",
+    "english": "today i learned a new sign",
+    "gloss": "TODAY I LEARN NEW SIGN",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0043",
+    "english": "tomorrow my mother visits me",
+    "gloss": "TOMORROW MY MOTHER VISIT ME",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0044",
+    "english": "yesterday we finished the lesson",
+    "gloss": "YESTERDAY WE FINISH LESSON",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0045",
+    "english": "tonight i study at home",
+    "gloss": "TONIGHT I STUDY HOME",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0046",
+    "english": "this morning the train was late",
+    "gloss": "THIS-MORNING TRAIN LATE",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0047",
+    "english": "after class i meet my tutor",
+    "gloss": "AFTER CLASS I MEET MY TUTOR",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0048",
+    "english": "next week my doctor appointment is monday",
+    "gloss": "NEXT-WEEK MY DOCTOR APPOINTMENT MONDAY",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0049",
+    "english": "later we practice together",
+    "gloss": "LATER WE PRACTICE TOGETHER",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0050",
+    "english": "every friday i work downtown",
+    "gloss": "EVERY-FRIDAY I WORK DOWNTOWN",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0051",
+    "english": "this afternoon she has a meeting",
+    "gloss": "THIS-AFTERNOON SHE HAVE MEETING",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0052",
+    "english": "tomorrow we review chapter five",
+    "gloss": "TOMORROW WE REVIEW CHAPTER FIVE",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0053",
+    "english": "last night my computer crashed",
+    "gloss": "LAST-NIGHT MY COMPUTER CRASH",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0054",
+    "english": "today my father cooks dinner",
+    "gloss": "TODAY MY FATHER COOK DINNER",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0055",
+    "english": "next month we move apartments",
+    "gloss": "NEXT-MONTH WE MOVE APARTMENT",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "time_fronting",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0056",
+    "english": "my mother works at the hospital",
+    "gloss": "MY MOTHER HOSPITAL WORK",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "family_profession_topic_comment",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0057",
+    "english": "my father teaches math",
+    "gloss": "MY FATHER TEACH MATH",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "family_profession_topic_comment",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0058",
+    "english": "my sister is my interpreter",
+    "gloss": "MY SISTER MY INTERPRETER",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "family_profession_topic_comment",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0059",
+    "english": "my brother is a nurse",
+    "gloss": "MY BROTHER NURSE",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "family_profession_topic_comment",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0060",
+    "english": "our teacher is deaf",
+    "gloss": "OUR TEACHER DEAF",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "family_profession_topic_comment",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0061",
+    "english": "my aunt is a lawyer",
+    "gloss": "MY AUNT LAWYER",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "family_profession_topic_comment",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0062",
+    "english": "this man is my cousin",
+    "gloss": "THIS MAN MY COUSIN",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "family_profession_topic_comment",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0063",
+    "english": "that woman is my boss",
+    "gloss": "THAT WOMAN MY BOSS",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "family_profession_topic_comment",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0064",
+    "english": "my grandfather is a mechanic",
+    "gloss": "MY GRANDFATHER MECHANIC",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "family_profession_topic_comment",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0065",
+    "english": "my roommate is hearing",
+    "gloss": "MY ROOMMATE HEARING",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "family_profession_topic_comment",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0066",
+    "english": "the red book is on the table",
+    "gloss": "TABLE ON RED BOOK",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "descriptive_reorder",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0067",
+    "english": "my blue backpack is in the car",
+    "gloss": "CAR IN MY BLUE BACKPACK",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "descriptive_reorder",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0068",
+    "english": "the meeting is in room five",
+    "gloss": "ROOM FIVE MEETING",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "descriptive_reorder",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0069",
+    "english": "your coffee is on the desk",
+    "gloss": "DESK ON YOUR COFFEE",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "descriptive_reorder",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0070",
+    "english": "the new student is from mexico",
+    "gloss": "NEW STUDENT MEXICO FROM",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "descriptive_reorder",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0071",
+    "english": "the homework for math is difficult",
+    "gloss": "MATH HOMEWORK DIFFICULT",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "descriptive_reorder",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0072",
+    "english": "the bus stop is near the library",
+    "gloss": "LIBRARY NEAR BUS STOP",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "descriptive_reorder",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0073",
+    "english": "my favorite class is science",
+    "gloss": "MY FAVORITE CLASS SCIENCE",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "descriptive_reorder",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0074",
+    "english": "the yellow jacket is mine",
+    "gloss": "YELLOW JACKET MINE",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "descriptive_reorder",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  },
+  {
+    "pair_id": "targeted_0075",
+    "english": "the doctor office is downstairs",
+    "gloss": "DOCTOR OFFICE DOWNSTAIRS",
+    "source_kind": "targeted_failure_augmentation",
+    "source_files": [
+      "data/asl_gloss_pairs_targeted_75.json"
+    ],
+    "manual_category": "descriptive_reorder",
+    "notes": "Synthetic targeted augmentation created from observed grammar-challenge weaknesses."
+  }
+]

@@ -29,6 +29,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--device", default="cpu", help="cpu or cuda")
     parser.add_argument("--max_len", type=int, default=32)
+    parser.add_argument("--beam_width", type=int, default=1, help="Beam search width. 1 = greedy decoding.")
     parser.add_argument(
         "--use_fallback",
         action="store_true",
@@ -67,52 +68,30 @@ def _load_inputs(args: argparse.Namespace) -> list[str]:
 def main() -> None:
     args = parse_args()
 
-    from src.asl.fallback_rules import fallback_text_to_gloss
-    from src.models.inference import load_inference_bundle, predict_gloss
-    from src.nlp.normalize_text import normalize_text
+    from src.services.asl_pipeline import run_text_to_asl
 
     inputs = _load_inputs(args)
 
     if args.use_fallback:
-        outputs = []
-        for text in inputs:
-            norm = normalize_text(text)
-            fallback = fallback_text_to_gloss(norm["tokens"])
-            outputs.append(
-                {
-                    "input_text": text,
-                    "clean_text": norm["clean_text"],
-                    "predicted_gloss_tokens": fallback["predicted_gloss_tokens"],
-                    "predicted_gloss_text": fallback["predicted_gloss_text"],
-                    "model_name": "fallback_rules",
-                    "used_fallback": True,
-                    "empty_after_postprocess": len(fallback["predicted_gloss_tokens"]) == 0,
-                }
-            )
+        bundle = None
+    else:
+        from src.models.inference import load_inference_bundle
 
-        if args.text_file:
-            print(json.dumps(outputs, indent=2, ensure_ascii=False))
-        else:
-            print(json.dumps(outputs[0], indent=2, ensure_ascii=False))
-        return
-
-    bundle = load_inference_bundle(args.checkpoint, device=args.device)
+        bundle = load_inference_bundle(args.checkpoint, device=args.device)
 
     outputs = []
     for text in inputs:
-        prediction = predict_gloss(
+        payload = run_text_to_asl(
             text,
             bundle=bundle,
+            checkpoint=args.checkpoint if bundle is None else None,
             device=args.device,
             max_len=args.max_len,
+            beam_width=args.beam_width,
             debug=args.debug,
+            use_fallback=args.use_fallback,
+            include_fallback_compare=args.include_fallback_compare,
         )
-        payload = prediction.to_dict()
-        payload["input_text"] = text
-
-        if args.include_fallback_compare:
-            norm = normalize_text(text)
-            payload["fallback_compare"] = fallback_text_to_gloss(norm["tokens"])
 
         outputs.append(payload)
 

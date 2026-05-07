@@ -1,0 +1,48 @@
+{
+  "status": "ok",
+  "v3_detected": false,
+  "raw_inputs": {
+    "aslg_pc12_csv": "data/raw/train.csv",
+    "project_conversational": "data/raw/asl_gloss_conversational.json",
+    "v2_provenance": "data/raw/asl_gloss_pairs_v2.json",
+    "v4_provenance": "data/raw/asl_gloss_pairs_v4.json"
+  },
+  "active_outputs": {
+    "aslg_pc12_pretrain": "data/active/aslg_pc12_pretrain.json",
+    "project_finetune_v2_v4_contrastive": "data/active/project_finetune_v2_v4_contrastive.json",
+    "report": "data/reports/data_pipeline_report.json"
+  },
+  "raw_aslg_row_count": 87710,
+  "aslg_columns": [
+    "gloss",
+    "text"
+  ],
+  "cleaned_aslg_pair_count": 80998,
+  "aslg_duplicates_removed": 6663,
+  "aslg_dropped_rows": 49,
+  "aslg_drop_reasons": {
+    "missing_text": 48,
+    "missing_gloss": 1
+  },
+  "aslg_conflicting_english_count": 93,
+  "aslg_rows_with_symbol_artifacts": 1497,
+  "aslg_target_length": {
+    "avg": 10.908,
+    "min": 1,
+    "max": 49
+  },
+  "raw_project_pair_count": 639,
+  "project_base_pair_count": 639,
+  "generated_augmentation_count": 150,
+  "contrastive_pair_count": 200,
+  "final_project_finetune_pair_count": 989,
+  "project_duplicates_removed": 0,
+  "project_conflicts_removed": 0,
+  "source_kind_counts": {
+    "project_v2_v4_conversational": 639,
+    "generated_augmentation": 150,
+    "contrastive_generated": 200
+  },
+  "total_duplicates_removed": 6663,
+  "total_conflicts_removed": 0
+}
